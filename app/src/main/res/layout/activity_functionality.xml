@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Functionality">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView75"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Оценка функциональной самостоятельности после внутричерепного кровоизлияния"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Данная шкала используется при поступлении в больницу для прогнозирования вероятности достижения функциональной самостоятельности (показатель исхода Глазго больше или равен 4) через 90 дней после внутричерепного кровоизлияния.\n\nИсследователи отмечали, что за 90 дней ни один из пациентов с баллом, меньшим или равным 4, не достиг функциональной самостоятельности, в то время как более 80% пациентов с баллом 11 достигли функциональной самостоятельности."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView77"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Объем внутричерепного кровоизлияния"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbVolume4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="менее 30 cm³ 4 балла" />
+
+                <RadioButton
+                    android:id="@+id/rbVolume2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="30–60 cm³ 2 балла " />
+
+                <RadioButton
+                    android:id="@+id/rbVolume0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="более 60 cm³ 0 баллов" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView78"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Возраст"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbAgeFunctionalityLess70"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="менее 70 лет 2 балла" />
+
+                <RadioButton
+                    android:id="@+id/rbAgeFunctionality70"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="70–79 лет 1 балл " />
+
+                <RadioButton
+                    android:id="@+id/rbAgeFunctionality80"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="более 80 лет 2 балла " />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView79"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Локализация внутричерепного кровоизлияния"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbLocal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Лобная доля 2 балла " />
+
+                <RadioButton
+                    android:id="@+id/rbLocal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Теменная доля 1 балл " />
+
+                <RadioButton
+                    android:id="@+id/rbLocal0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Затылочная доля 0 баллов" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView80"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Оценка по шкале комы Глазго"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbGlazgo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9 и более 2 балла " />
+
+                <RadioButton
+                    android:id="@+id/rbGlazgo0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="менее 9 0 баллов" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView81"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Когнитивные нарушения до внутричерепного кровоизлияния"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbCogn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Нет 1 балл " />
+
+                <RadioButton
+                    android:id="@+id/rbCogn0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Да 0 баллов" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/functionalityInterpretation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:visibility="gone" />
+
+            <Button
+                android:id="@+id/functionalityResultBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Показать результат" />
+
+            <Button
+                android:id="@+id/backFromFunctionalityBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Вернуться в главное меню" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

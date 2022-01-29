@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Neurologycalc">
         <activity
+            android:name=".SKF"
+            android:exported="false" />
+        <activity
             android:name=".Volume"
             android:exported="false" />
         <activity

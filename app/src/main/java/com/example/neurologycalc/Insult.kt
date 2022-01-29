@@ -52,6 +52,12 @@ class Insult : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val skf = findViewById<Button>(R.id.skfBtn)
+        skf.setOnClickListener(){
+            val intent = Intent(this@Insult,SKF::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

@@ -18,11 +18,10 @@ class SKF : Activity() {
         setContentView(R.layout.activity_skf)
 
         val back = findViewById<Button>(R.id.backFromSkf)
-        back.setOnClickListener(){
-            val intent = Intent(this@SKF,MainActivity::class.java)
+        back.setOnClickListener() {
+            val intent = Intent(this@SKF, MainActivity::class.java)
             startActivity(intent)
         }
-
 
 
         val crt = findViewById<EditText>(R.id.etCrt)
@@ -30,15 +29,15 @@ class SKF : Activity() {
         val weight = findViewById<EditText>(R.id.SkfWeight)
         val height = findViewById<EditText>(R.id.SkfHeight)
 
+        val male = findViewById<RadioButton>(R.id.btnMale)
+        val female = findViewById<RadioButton>(R.id.btnFemale)
+        val mkm = findViewById<RadioButton>(R.id.btnMol)
+        val mg = findViewById<RadioButton>(R.id.btnMg)
+
+        val interpretation = findViewById<TextView>(R.id.skfInterpretation)
+
         val result = findViewById<Button>(R.id.skfResult)
         result.setOnClickListener() {
-
-            val male = findViewById<RadioButton>(R.id.rbMale)
-            val female = findViewById<RadioButton>(R.id.rbFemale)
-            val mkm = findViewById<RadioButton>(R.id.btnMol)
-            val mg = findViewById<RadioButton>(R.id.btnMg)
-
-            val interpretation = findViewById<TextView>(R.id.skfInterpretation)
 
             var crtText = crt.text.toString()
             var ageText = age.text.toString()
@@ -50,46 +49,61 @@ class SKF : Activity() {
             var weightResult: Double
             var heightResult: Double
 
-
             var total: Double
 
-            if (crtText.isEmpty()) {
+            if(crtText.isEmpty()){
                 crtResult = 0.0
-            } else {
-                crtResult = crtText.toDouble()
+            }
+            else{
+                crtResult = crt.text.toString().toDouble()
             }
 
-            if (ageText.isEmpty()) {
+            if(ageText.isEmpty()){
                 ageResult = 0.0
-            } else {
-                ageResult = ageText.toDouble()
+            }
+            else{
+                ageResult = age.text.toString().toDouble()
             }
 
-            if (weightText.isEmpty()) {
+            if(weightText.isEmpty()){
                 weightResult = 0.0
-            } else {
-                weightResult = weightText.toDouble()
+            }
+            else{
+                weightResult = weight.text.toString().toDouble()
             }
 
-            if (heightText.isEmpty()) {
+            if(heightText.isEmpty()){
                 heightResult = 0.0
-            } else {
-                heightResult = heightText.toDouble()
+            }
+            else{
+                heightResult = height.text.toString().toDouble()
             }
 
-
-
-            if (crtResult<=62 || female.isChecked){
+            if (crtResult<=62 && female.isChecked && mkm.isChecked){
                 total = 144 * (0.993.pow(ageResult)) * pow(((crtResult/88.4)/0.7),-0.328)
                 val df = DecimalFormat("#")
                 interpretation.visibility = TextView.VISIBLE
-                interpretation.text = "${df.format(total)}"
+                interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м"
+            }
+            if (crtResult>62 && female.isChecked && mkm.isChecked){
+                total = 144 * (0.993.pow(ageResult)) * pow(((crtResult/88.4)/0.7),-1.210)
+                val df = DecimalFormat("#")
+                interpretation.visibility = TextView.VISIBLE
+                interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м"
             }
 
-
-
+            if (crtResult<=80 && male.isChecked && mkm.isChecked){
+                total = 141 * (0.993.pow(ageResult)) * pow(((crtResult/88.4)/0.9),-0.412)
+                val df = DecimalFormat("#")
+                interpretation.visibility = TextView.VISIBLE
+                interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м"
+            }
+            if (crtResult>80 && male.isChecked && mkm.isChecked){
+                total = 141 * (0.993.pow(ageResult)) * pow(((crtResult/88.4)/0.9),-1.210)
+                val df = DecimalFormat("#")
+                interpretation.visibility = TextView.VISIBLE
+                interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м"
+            }
 
         }
-        }
-
-    }
+    }}

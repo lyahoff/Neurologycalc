@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="4dp"
+    tools:context=".Nihss">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Шкала инсульта национального института здоровья (NIHSS)"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="1а. Уровень бодрствования"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Если полноценное исследование невозможно (например, из-за эндотрахеальной трубки, языкового барьера или повреждения оротрахеальной области), оценивается общий уровень ответов и реакций. Оценка 3 ставится только в тех случаях, когда пациент в коме и не реагирует на болевые раздражители или его реакции носят рефлекторный характер (разгибание конечностей)."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rb1_1a0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ясное сознание, живо реагирует 0 баллов " />
+
+                <RadioButton
+                    android:id="@+id/rb1_1a1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Оглушение и/или сомноленция; можно добиться ответов и выполнения инструкций при минимальной стимуляции 1 балл" />
+
+                <RadioButton
+                    android:id="@+id/rb1_1a2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Глубокое оглушение или сопор, реагирует только на сильные и болевые раздражители, но движения не стереотипны 2 балла" />
+
+                <RadioButton
+                    android:id="@+id/rb1_1a3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Атония, арефлексия и ареактивность или ответы на раздражители состоят из рефлекторных нецеленаправленных движений и/или вегетативных реакций 3 балла" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="1б. Уровень бодрствования: ответы на вопросы"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пациента просят назвать текущий месяц и свой возраст. Ответы должны быть точными, нельзя засчитывать ответ, который близок к правильному. Если пациент не воспринимает вопрос (афазия, значительное снижение уровня бодрствования), ставится оценка 2. Если пациент не может говорить из-за механических препятствий (эндотрахеальная трубка, повреждение челюстно-лицевой области), тяжелой дизартрии или других проблем, не связанных с афазией, ставится оценка 1. Важно, чтобы оценивался только первый ответ и исследователь никак не помогал пациенту."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rb1_1b0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Правильные ответы на оба вопроса 0 баллов " />
+
+                <RadioButton
+                    android:id="@+id/rb1_1b1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Правильный ответ на один вопрос 1 балл " />
+
+                <RadioButton
+                    android:id="@+id/rb1_1b2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Не ответил на оба вопроса 2 балла" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="1в. Уровень бодрствования: выполнение команд"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пациента просят открыть и затем закрыть глаза, сжать и разжать кулак непарализованной руки. Если есть препятствия (например, невозможно использовать руку), замените эту команду другой командой, предусматривающей одноэтапное действие. Если сделана явная попытка, но действие не завершено из-за слабости, результат зачитывается. Если пациент не реагирует на произнесение команды, ему следует продемонстрировать, что от него требуется, и затем оценить результат (повторил оба, одно или ни одного). Оценивается только первая попытка."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rb1_1v0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Выполнил обе команды 0 баллов " />
+
+                <RadioButton
+                    android:id="@+id/rb1_1v1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Выполнил одну команду 1 балл " />
+
+                <RadioButton
+                    android:id="@+id/rb1_1v2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Не выполнил ни одной из команд 2 балла" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="2. Движения глазных яблок"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Слежение за движением пальца исследователя."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbEye0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Норма 0 баллов " />
+
+                <RadioButton
+                    android:id="@+id/rbEye1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Частичный парез взора; нарушены движения одного или обоих глаз, но нет тонической девиации глазных яблок и полного паралича взора 1 балл" />
+
+                <RadioButton
+                    android:id="@+id/rbEye2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Тоническая девиация глазных яблок или полный паралич взора, который сохраняется при проверке окулоцефалических рефлексов 2 балла" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="3. Поля зрения"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Поля зрения (верхние и нижние квадранты) исследуют методом конфронтации, путем подсчета количества пальцев или пугающих резких движений от периферии к центру глаза. Можно давать пациентам соответствующие подсказки, но если они смотрят в направлении движущихся пальцев, это можно расценивать как норму. Если один глаз не видит или отсутствует, исследуется второй. Оценка 1 ставится только в случае выявления четкой асимметрии (включая квадрантанопсию). Если пациент слеп (по любой причине), ставится 3. Здесь же исследуется одновременная стимуляция с обеих сторон, и, если есть гемиигнорирование, ставится 1 и результат используется в разделе 11."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbVision0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Поля зрения не нарушены 0 баллов " />
+
+                <RadioButton
+                    android:id="@+id/rbVision1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Частичная гемианопсия 1 балл " />
+
+                <RadioButton
+                    android:id="@+id/rbVision2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Полная гемианопсия 2 балла " />
+
+                <RadioButton
+                    android:id="@+id/rbVision3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Слепота, включая корковую 3 балла" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="4. Нарушение функции лицевого нерва"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbFace0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Нормальные симметричные движения мимических мышц 0 баллов " />
+
+                <RadioButton
+                    android:id="@+id/rbFace1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Легкий парез мимических мышц, сглажена носо-губная складка, асимметричная улыбка 1 балл " />
+
+                <RadioButton
+                    android:id="@+id/rbFace2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Умеренный прозопарез, полный или выраженный парез нижней группы мимических мышц 2 балла " />
+
+                <RadioButton
+                    android:id="@+id/rbFace3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Паралич одной или обеих половин лица, отсутствие движений в верхней и нижней части лица 3 балла " />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="5а. Сила мышц левой руки"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Разогнутую руку устанавливают под углом 90° (если пациент сидит) или 45° (если пациент лежит) к телу ладонями книзу и просят пациента удерживать ее в таком положении 10 с. Сначала оценивают непарализованную руку, затем другую. При афазии можно помочь принять исходное положение и использовать пантомиму, но не болевые раздражители. Если исследовать силу невозможно (конечность отсутствует, анкилоз в плечевом суставе, перелом), данный раздел помечается UN (от англ. untestable) и приводится объяснение причины."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbLA0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Рука не опускается в течение 10 с 0 баллов " />
+
+                <RadioButton
+                    android:id="@+id/rbLA1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Рука начинает опускаться до истечения 10 с, но не касается кровати или другой поверхности 1 балл " />
+
+                <RadioButton
+                    android:id="@+id/rbLA2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Рука удерживается какое-то время, но в течение 10 с касается горизонтальной поверхности 2 балла " />
+
+                <RadioButton
+                    android:id="@+id/rbLA3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Рука сразу падает, но в ней есть движения 3 балла " />
+
+                <RadioButton
+                    android:id="@+id/rbLA4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Движения в руке отсутствуют, UN = исследовать невозможно 4 балла" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="5б. Сила мышц правой руки"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Разогнутую руку устанавливают под углом 90° (если пациент сидит) или 45° (если пациент лежит) к телу ладонями книзу и просят пациента удерживать ее в таком положении 10 с. Сначала оценивают непарализованную руку, затем другую. При афазии можно помочь принять исходное положение и использовать пантомиму, но не болевые раздражители. Если исследовать силу невозможно (конечность отсутствует, анкилоз в плечевом суставе, перелом), данный раздел помечается UN (от англ. untestable) и приводится объяснение причины."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rbRA0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Рука не опускается в течение 10 с 0 баллов " />
+
+                <RadioButton
+                    android:id="@+id/rbRA1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Рука начинает опускаться до истечения 10 с, но не касается кровати или другой поверхности 1 балл " />
+
+                <RadioButton
+                    android:id="@+id/rbRA2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Рука удерживается какое-то время, но в течение 10 с касается горизонтальной поверхности 2 балла " />
+
+                <RadioButton
+                    android:id="@+id/rbRA3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Рука сразу падает, но в ней есть движения 3 балла " />
+
+                <RadioButton
+                    android:id="@+id/rbRA4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Движения в руке отсутствуют, UN = исследовать невозможно 4 балла" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="6а. Сила мышц левой ноги"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Всегда исследуется в положении лежа. Пациента просят поднять ногу под углом 30° к горизонтальной поверхности и удерживать в таком положении 5 с. При афазии можно помочь принять исходное положение и использовать пантомиму, но не болевые раздражители. Сначала оценивают непарализованную ногу, затем другую. Если исследовать силу невозможно (конечность отсутствует, анкилоз в плечевом суставе, перелом) делается соответствующая отметка."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbLL0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Нога не опускается в течение 5 с 0 баллов " />
+
+                <RadioButton
+                    android:id="@+id/rbLL1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Нога начинает опускаться до истечения 5 с, но не касается кровати 1 балл " />
+
+                <RadioButton
+                    android:id="@+id/rbLL2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Нога удерживается какое-то время, но в течение 5 с касается кровати 2 балла " />
+
+                <RadioButton
+                    android:id="@+id/rbLL3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Нога сразу падает, но в ней есть движения 3 балла " />
+
+                <RadioButton
+                    android:id="@+id/rbLL4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Движения в ноге отсутствуют, UN = исследовать невозможно 4 балла" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="6б. Сила мышц правой ноги"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Всегда исследуется в положении лежа. Пациента просят поднять ногу под углом 30° к горизонтальной поверхности и удерживать в таком положении 5 с. При афазии можно помочь принять исходное положение и использовать пантомиму, но не болевые раздражители. Сначала оценивают непарализованную ногу, затем другую. Если исследовать силу невозможно (конечность отсутствует, анкилоз в плечевом суставе, перелом) делается соответствующая отметка."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbRL0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Нога не опускается в течение 5 с 0 баллов " />
+
+                <RadioButton
+                    android:id="@+id/rbRL1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Нога начинает опускаться до истечения 5 с, но не касается кровати 1 балл " />
+
+                <RadioButton
+                    android:id="@+id/rbRL2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Нога удерживается какое-то время, но в течение 5 с касается кровати 2 балла " />
+
+                <RadioButton
+                    android:id="@+id/rbRL3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Нога сразу падает, но в ней есть движения 3 балла " />
+
+                <RadioButton
+                    android:id="@+id/rbRL4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Движения в ноге отсутствуют, UN = исследовать невозможно 4 балла" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="7. Атаксия в конечностях"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Данный раздел предусматривает выявление признаков поражения мозжечка с одной стороны. Исследование проводится с открытыми глазами. Если есть ограничение полей зрения, исследование проводится в той области, где нет нарушений. С обеих сторон выполняются пальце-носо-пальцевая и коленно-пяточная проба. Баллы начисляются только в том случае, когда выраженность атаксии превосходит выраженность пареза. Если пациент не доступен контакту или парализован, атаксия отсутствует. Если пациент не видит, проводится пальце-носовая проба. Если тест провести невозможно (конечность отсутствует, анкилоз, перелом), данный раздел помечается UN (от англ. untestable) и приводится объяснение причины."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbAtaxya0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Атаксии нет 0 баллов " />
+
+                <RadioButton
+                    android:id="@+id/rbAtaxya1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Атаксия в одной конечности 1 балл " />
+
+                <RadioButton
+                    android:id="@+id/rbAtaxya2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Атаксия в двух конечностях, UN = исследовать невозможно 2 балла" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="8. Чувствительность"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Исследуется с помощью уколов булавкой (зубочисткой) и прикосновений. При нарушении сознания или афазии оцениваются гримасы, отдергивание конечности. Оцениваются только гипестезия, вызванная инсультом (по гемитипу), поэтому для верификации необходимо сравнивать реакцию на уколы в различных частях тела (предплечья и плечи, бедра, туловище, лицо). Оценка 2 ставится только в тех случаях, когда грубое снижение чувствительности в одной половине тела не вызывает сомнений, поэтому пациенты с афазией или нарушением сознания на уровне сопора получат 0 или 1. При двусторонней гемигипестезии, вызванной стволовым инсультом, ставится 2. Пациенты в коме автоматически получают 2."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbSens0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Норма 0 баллов " />
+
+                <RadioButton
+                    android:id="@+id/rbSens1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Легкая или умеренная гемигипестезия; на пораженной стороне пациент ощущает уколы как менее острые или как прикосновения 1 балл" />
+
+                <RadioButton
+                    android:id="@+id/rbSens2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Тяжелая гемигипестезия или гемианестезия; пациент не ощущает ни уколов, ни прикосновений 2 балла" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="9. Речь"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сведения относительно понимания обращенной речи уже получены в ходе исследования предыдущих разделов. Для изучения речевой продукции пациента просят описать события на картинке, назвать предметы и прочесть отрывок текста. Если исследованию речи мешают проблемы со зрением, попросите пациента назвать предметы, помещаемые ему в руку, повторить фразу и рассказать о каком-либо событии из его жизни. Если установлена эндотрахеальная трубка, пациента следует попросить выполнить задания письменно. Больные в коме автоматически получают 3. При нарушении сознания оценку определяет исследователь, но 3 ставится только при мутизме и полном игнорировании простых команд."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbSpeak0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Норма 0 баллов " />
+
+                <RadioButton
+                    android:id="@+id/rbSpeak1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Легкая или умеренная афазия; речь искажена или нарушено понимание, но пациент может высказать свою мысль и понять исследователя 1 балл " />
+
+                <RadioButton
+                    android:id="@+id/rbSpeak2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Тяжелая афазия; возможна лишь фрагментарная коммуникация, понимание речи пациента сильно затруднено, со слов пациента исследователь не может понять, что изображено на картинках 2 балла" />
+
+                <RadioButton
+                    android:id="@+id/rbSpeak3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Мутизм, тотальная афазия; пациент не произносит никаких звуков и совершенно не понимает обращенной речи 3 балла" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="10. Дизартрия"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Не нужно говорить пациенту, что именно вы собираетесь оценивать. При нормальной артикуляции пациент говорит внятно, у него не вызывает затруднений произнесение сложных сочетаний звуков, скороговорок. При тяжелой афазии оценивается произношение отдельных звуков и фрагментов слов, при мутизме ставится 2. Если исследовать силу невозможно (интубация, травма лица) делается соответствующая отметка."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbDis0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Норма 0 баллов " />
+
+                <RadioButton
+                    android:id="@+id/rbDis1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Легкая или умеренная дизартрия; некоторые звуки «смазаны», понимание слов вызывает некоторые затруднения 1 балл" />
+
+                <RadioButton
+                    android:id="@+id/rbDis2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Грубая дизартрия; слова настолько искажены, что их очень трудно понять (причина не в афазии), или отмечается анартрия/мутизм, UN = исследовать невозможно 2 балла" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="11. Гемиигнорирование (неглект)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Под сенсорным гемиигнорированием понимают нарушение восприятия на половине тела (обычно левой) при нанесении стимулов одновременно с обеих сторон при отсутствии гемигипестезии. Под визуальным гемиигнорированием понимают нарушение восприятия объектов в левой половине поля зрения при отсутствии левосторонней гемианопсии. Как правило, достаточно данных из предыдущих разделов. Если исследовать зрительное гемиигнорирование невозможно ввиду зрительных нарушений, а восприятие болевых раздражителей не нарушено, оценка 0. Анозогнозия свидетельствует о гемиигнорировании. Оценка в данном разделе ставится только при наличии гемиигнорирования, поэтому заключение «исследовать невозможно» к нему неприменимо."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbNegl0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Норма 0 баллов " />
+
+                <RadioButton
+                    android:id="@+id/rbNegl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Выявлены признаки гемиигнорирования одного вида раздражителей (зрительных, сенсорных, слуховых) 1 балл" />
+
+                <RadioButton
+                    android:id="@+id/rbNegl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Выявлены признаки гемиигнорирования более чем одного вида раздражителей; не узнает свою руку или воспринимает лишь половину пространства 2 балла" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/nihssInterpretation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/nihssResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="Получить результат" />
+
+            <Button
+                android:id="@+id/backFromNihss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Вернуться в главное меню" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

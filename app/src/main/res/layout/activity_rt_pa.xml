@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RtPa">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Расчет дозы rt-PA"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/rtpaEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="Вес пациента в кг"
+                android:inputType="number"
+                android:maxLength="3"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/rtpaInterpr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:visibility="gone" />
+
+            <Button
+                android:id="@+id/rtpaResultBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Выполнить расчет" />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Доза t-PA рассчитывается как 0,9 мг/кг. Максимальная доза 90 мг. Флакон содержит 100mg t-PA и поэтому доза сброса 100 — (высчитанная доза)."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Показания"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="- Возраст ≥18 лет. \n\n
+- Ожидается, что значительный неврологический дефицит приведет к долгосрочной инвалидности. \n\n
+- Неконтрастная компьютерная томография, не показывающая кровоизлияния или сформировавшегося вновь очага инфаркта. \n\n
+- Острые симптомы ишемического инсульта четко определенные, менее чем за 3 часа до введения t-PA (в рамках терапевтического окна 3-4,5 часа)."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Противопоказания"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView69"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="- Систолическое АД > 185 мм. рт. ст. или диастолическое АД > 110 мм рт. ст. (несмотря на медицинское вмешательство для снижения АД). \n\n
+- Судороги при поступлении (можно рассмотреть введение rt-PA, если сосудистая окклюзия может быть идентифицирована при КТ-ангиографии). \n\n
+- Последние операции/травмы (менее 15 дней). Недавняя внутричерепная или спинальная хирургия, травма головы или инсульт (менее 3 месяцев). \n\n
+- В анамнезе внутричерепное кровоизлияние, аневризма, артериовенозная мальформация, или новообразование. Активное внутреннее кровотечение (менее 22 дней). \n\n
+- Количество тромбоцитов менее 100 000, активированное частичное тромбопластиновое время более 40 секунд после введения гепарина, протромбиновое время более 15 или МНО более 1,7, или известные коагулопатии. \n\n
+- Подозрение на субарахноидальное кровоизлияние. \n\n
+- По результатам КТ наличие внутримозгового кровоизлияния, субарахноидального кровоизлияния или обширного острого инфаркта (гиподенстность больше 1/3 полушария головного мозга)."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Предупреждение"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="- Уровень глюкозы менее 50 мг/дл или более 400 мг/дл. \n\n
+- Высокий риск кровотечения может произойти в подостром периоде бактериального эндокардита, у пациентов с МНО более 1,7. \n\n
+- Риск может превысить пользу у пациентов с минимальным неврологическим дефицитом и быстрым регрессом неврологической симптоматики."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Дополнительные предупреждения"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView72"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="- Возраст > 80 лет. \n\n
+- История предшествующего инсульта и диабета. \n\n
+- Любое использование антикоагулянтов до поступления, независимо от уровня МНО. \n\n
+- NIHSS > 25."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/backFromRtpaBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Вернуться в главное меню" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

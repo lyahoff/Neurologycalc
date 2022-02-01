@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HasBled">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Шкала HAS-BLED (оценки риска кровотечений при мерцательной аритмии)"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/agChB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Артериальная гипертония \nсистолическое АД выше 160 мм рт. ст. - 1 балл" />
+
+            <CheckBox
+                android:id="@+id/kidneyChB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Нарушение функции почек \nпостоянный гемодиализ, трансплантация почки или креатинин сыворотки выше 200 мкмоль/л. - 1 балл" />
+
+            <CheckBox
+                android:id="@+id/liverChB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Нарушение функции печени \nхроническое заболевание печени (например, цирроз печени) или биохимические показатели значительного поражения печени (билирубин в два раза выше верхней границы нормы в сочетании с повышением активности АСТ, АЛТ и ЩФ в 3 раза выше верхней границы нормы). - 1 балл " />
+
+            <CheckBox
+                android:id="@+id/insChB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Инсульт в анамнезе - 1 балл " />
+
+            <CheckBox
+                android:id="@+id/bloodChB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Кровотечения \nкровотечение в анамнезе, геморрагический диатез или анемия, снижением Hb > 2 г/л. - 1 балл " />
+
+            <CheckBox
+                android:id="@+id/mnoChB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Неустойчивое МНО \nнестабильное или высокое МНО или выход за пределы терапевтического интервала более 40% времени. - 1 балл " />
+
+            <CheckBox
+                android:id="@+id/ageChB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Пожилой возраст \nстарше 65 лет. - 1 балл " />
+
+            <CheckBox
+                android:id="@+id/drugsChB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Лекарственные препараты \nприем препаратов, повышающих риск кровотечения, таких как антиагреганты и НПВС. - 1 балл " />
+
+            <CheckBox
+                android:id="@+id/alcoholChB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Алкоголь \nупотребление более 8 порций алкогольных напитков в неделю. - 1 балл " />
+
+            <TextView
+                android:id="@+id/hasInterpretation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:visibility="gone" />
+
+            <Button
+                android:id="@+id/hasResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Выполнить расчет" />
+
+            <Button
+                android:id="@+id/backFromHas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Вернуться в главное меню" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

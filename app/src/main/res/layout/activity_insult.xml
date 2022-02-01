@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Insult">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/nihssBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Шкала инсульта национального института здоровья (NIHSS)" />
+
+            <Button
+                android:id="@+id/cha2Btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Шкала CHA2DS2-VASC (оценки риска инсульта и системной тромбоэмболии у пациентов с фибрилляцией предсердий)" />
+
+            <Button
+                android:id="@+id/hasBledBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Шкала HAS-BLED (оценки риска кровотечений при мерцательной аритмии)" />
+
+            <Button
+                android:id="@+id/abcd2Btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Шкала ABCD2" />
+
+            <Button
+                android:id="@+id/rtpaBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Расчет дозы rt-PA" />
+
+            <Button
+                android:id="@+id/renkinBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Шкала Рэнкина" />
+
+            <Button
+                android:id="@+id/scoreBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Шкала SCORE" />
+
+            <Button
+                android:id="@+id/backToMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Вернуться в главное меню" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

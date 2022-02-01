@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ABCD2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Шкала ABCD2"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Шкала ABCD2 служит для быстрой оценки риска развития раннего инсульта в течение первых 2, 7 и 90 дней после перенесенной транзиторной ишемической атаки (ТИА). "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="1. Возраст"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rbAgeAbcd60"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Младше 60 лет 0 баллов" />
+
+                <RadioButton
+                    android:id="@+id/rbAgeAbcd60More"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Старше 60 лет 1 балл " />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="2. Артериальное давление"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rbAgNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Нормальное 0 баллов " />
+
+                <RadioButton
+                    android:id="@+id/rbAgMore140"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Выше 140/90 мм рт. ст. 1 балл " />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="3. Клинические симптомы"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbGemiparez"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Гемипарез 2 балла " />
+
+                <RadioButton
+                    android:id="@+id/rbGemiparezSpeak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Нарушение речи без гемипареза 1 балл" />
+
+                <RadioButton
+                    android:id="@+id/rbGemaparezAny"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Другие симптомы 0 баллов" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="4. Длительность симптомов"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbSymptLess10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Менее 10 минут 0 баллов" />
+
+                <RadioButton
+                    android:id="@+id/rbSymptLess60"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10-59 минут 1 балл " />
+
+                <RadioButton
+                    android:id="@+id/rbSymptMore60"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Более 60 минут 2 балла " />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="5. Сахарный диабет"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbAbcdDiabNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Нет 0 баллов" />
+
+                <RadioButton
+                    android:id="@+id/rbAbcdDiabYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Есть 1 балл" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/abcdInterpr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:visibility="gone" />
+
+            <Button
+                android:id="@+id/abcdResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Выполнить расчет" />
+
+            <Button
+                android:id="@+id/backFromAbcd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Вернуться в главное меню" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

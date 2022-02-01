@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.neurologycalc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Neurologycalc">
+        <activity
+            android:name=".IdealBody"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Algover"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SKF"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Volume"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Functionality"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Renkin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RtPa"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ABCD2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HasBled"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cha2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Nihss"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MIDAS"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Richmond"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FOUR"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GlazgoChildren"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GlazgoScreen"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Consciousness"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Subarach"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Intracranial"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Insult"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

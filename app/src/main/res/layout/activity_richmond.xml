@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Richmond">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Шкала возбуждения-седации Ричмонда"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <RadioGroup
+                android:id="@+id/richmondGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/richmond4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Больной агрессивен, воинственен, представляет непосредственную опасность для медицинского персонала оценка +4" />
+
+                <RadioButton
+                    android:id="@+id/richmond3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Тянет или удаляет трубки и катетеры или имеет агрессивное поведение по отношению к медицинскому персоналу оценка +3" />
+
+                <RadioButton
+                    android:id="@+id/richmond2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Частые нецеленаправленные движения и/или десинхронизация с аппаратом ИВЛ оценка +2" />
+
+                <RadioButton
+                    android:id="@+id/richmond1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Взволнован, но движения не энергичные и не агрессивные оценка +1" />
+
+                <RadioButton
+                    android:id="@+id/richmond0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Бодрствует, спокоен, внимателен оценка 0" />
+
+                <RadioButton
+                    android:id="@+id/richmond_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Потеря внимательности, но при вербальном контакте не закрывает глаза дольше 10 секунд оценка -1" />
+
+                <RadioButton
+                    android:id="@+id/richmond_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="При вербальном контакте закрывает глаза меньше, чем через 10 секунд оценка -2" />
+
+                <RadioButton
+                    android:id="@+id/richmond_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Любое движение (но не зрительный контакт), в ответ на голос оценка -3" />
+
+                <RadioButton
+                    android:id="@+id/richmond_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Никакой реакции на голос, но есть какие-либо движения на физическую стимуляцию оценка -4" />
+
+                <RadioButton
+                    android:id="@+id/richmond_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Никакой реакции на голос и физическую стимуляцию оценка -5" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/richmondInterpretation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:text="Выберите один пункт"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/getRichmond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Показать результат" />
+
+            <Button
+                android:id="@+id/backFromRichmond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Вернуться в главное меню" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,19 +11,24 @@
         android:theme="@style/Theme.Neurologycalc">
         <activity
             android:name=".IdealBody"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Algover"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".SKF"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Volume"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Functionality"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Renkin"
             android:exported="false"
@@ -66,10 +71,6 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".GlazgoScreen"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Sclerose"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity

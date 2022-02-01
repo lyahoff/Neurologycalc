@@ -23,11 +23,8 @@ class SKF : Activity() {
             startActivity(intent)
         }
 
-
         val crt = findViewById<EditText>(R.id.etCrt)
         val age = findViewById<EditText>(R.id.SkfAge)
-        val weight = findViewById<EditText>(R.id.SkfWeight)
-        val height = findViewById<EditText>(R.id.SkfHeight)
 
         val male = findViewById<RadioButton>(R.id.btnMale)
         val female = findViewById<RadioButton>(R.id.btnFemale)
@@ -41,15 +38,12 @@ class SKF : Activity() {
 
             var crtText = crt.text.toString()
             var ageText = age.text.toString()
-            var weightText = weight.text.toString()
-            var heightText = height.text.toString()
 
             var crtResult: Double
             var ageResult: Double
-            var weightResult: Double
-            var heightResult: Double
 
             var total: Double
+            var mdrd : Double
 
             if(crtText.isEmpty()){
                 crtResult = 0.0
@@ -65,44 +59,141 @@ class SKF : Activity() {
                 ageResult = age.text.toString().toDouble()
             }
 
-            if(weightText.isEmpty()){
-                weightResult = 0.0
-            }
-            else{
-                weightResult = weight.text.toString().toDouble()
-            }
-
-            if(heightText.isEmpty()){
-                heightResult = 0.0
-            }
-            else{
-                heightResult = height.text.toString().toDouble()
-            }
 
             if (crtResult<=62 && female.isChecked && mkm.isChecked){
                 total = 144 * (0.993.pow(ageResult)) * pow(((crtResult/88.4)/0.7),-0.328)
+                mdrd = 175 * pow(crtResult/88.4,-1.154) * pow(ageResult,-0.203) * 0.742
                 val df = DecimalFormat("#")
                 interpretation.visibility = TextView.VISIBLE
-                interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м"
+
+                when(total){
+                    in 0.0..14.9 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: V\tТерминальная почечная недостаточность."
+                    }
+                    in 15.0..29.9 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: IV\tВыраженное снижение СКФ."
+                    }
+                    in 30.0..59.9 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: III\tУмеренное снижение СКФ."
+                    }
+                    in 60.0..89.9 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: II\tПризнаки повреждения почек с начальным снижением СКФ."
+                    }
+                    in 90.0..200.0 -> {
+                    interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                            "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                            "Стадия ХБП: I\tПризнаки повреждения почек с нормальной или повышенной СКФ."
+                }
+                }
+
             }
             if (crtResult>62 && female.isChecked && mkm.isChecked){
                 total = 144 * (0.993.pow(ageResult)) * pow(((crtResult/88.4)/0.7),-1.210)
+                mdrd = 175 * pow(crtResult/88.4,-1.154) * pow(ageResult,-0.203) * 0.742
                 val df = DecimalFormat("#")
                 interpretation.visibility = TextView.VISIBLE
-                interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м"
+                when(total){
+                    in 0.0..14.9 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: V\tТерминальная почечная недостаточность."
+                    }
+                    in 15.0..29.9 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: IV\tВыраженное снижение СКФ."
+                    }
+                    in 30.0..59.9 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: III\tУмеренное снижение СКФ."
+                    }
+                    in 60.0..89.9 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: II\tПризнаки повреждения почек с начальным снижением СКФ."
+                    }
+                    in 90.0..200.0 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: I\tПризнаки повреждения почек с нормальной или повышенной СКФ."
+                    }
+                }
             }
 
             if (crtResult<=80 && male.isChecked && mkm.isChecked){
                 total = 141 * (0.993.pow(ageResult)) * pow(((crtResult/88.4)/0.9),-0.412)
+                mdrd = 175 * pow(crtResult/88.4,-1.154) * pow(ageResult,-0.203)
                 val df = DecimalFormat("#")
                 interpretation.visibility = TextView.VISIBLE
-                interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м"
+                when(total){
+                    in 0.0..14.9 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: V\tТерминальная почечная недостаточность."
+                    }
+                    in 15.0..29.9 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: IV\tВыраженное снижение СКФ."
+                    }
+                    in 30.0..59.9 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: III\tУмеренное снижение СКФ."
+                    }
+                    in 60.0..89.9 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: II\tПризнаки повреждения почек с начальным снижением СКФ."
+                    }
+                    in 90.0..200.0 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: I\tПризнаки повреждения почек с нормальной или повышенной СКФ."
+                    }
+                }
             }
             if (crtResult>80 && male.isChecked && mkm.isChecked){
                 total = 141 * (0.993.pow(ageResult)) * pow(((crtResult/88.4)/0.9),-1.210)
+                mdrd = 175 * pow(crtResult/88.4,-1.154) * pow(ageResult,-0.203)
                 val df = DecimalFormat("#")
                 interpretation.visibility = TextView.VISIBLE
-                interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м"
+                when(total){
+                    in 0.0..14.9 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: V\tТерминальная почечная недостаточность."
+                    }
+                    in 15.0..29.9 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: IV\tВыраженное снижение СКФ."
+                    }
+                    in 30.0..59.9 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: III\tУмеренное снижение СКФ."
+                    }
+                    in 60.0..89.9 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: II\tПризнаки повреждения почек с начальным снижением СКФ."
+                    }
+                    in 90.0..200.0 -> {
+                        interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
+                                "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
+                                "Стадия ХБП: I\tПризнаки повреждения почек с нормальной или повышенной СКФ."
+                    }
+                }
             }
 
         }

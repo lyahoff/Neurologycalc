@@ -48,12 +48,6 @@
                 android:text="Шкала ABCD2" />
 
             <Button
-                android:id="@+id/skfBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Калькулятор СКФ и клиренса креатинина" />
-
-            <Button
                 android:id="@+id/rtpaBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

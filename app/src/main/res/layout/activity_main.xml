@@ -54,12 +54,6 @@
                 android:text="Оценка головной боли по шкале MIDAS" />
 
             <Button
-                android:id="@+id/scleroseButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Рассеянный склероз EDSS калькулятор" />
-
-            <Button
                 android:id="@+id/algoverBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -70,6 +64,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Идеальная масса тела" />
+
+            <Button
+                android:id="@+id/skfCalcBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Калькулятор СКФ и клиренса креатинина" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

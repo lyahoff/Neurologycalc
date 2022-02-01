@@ -10,52 +10,53 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var insultButton = findViewById<Button>(R.id.insultButton)
+        val insultButton = findViewById<Button>(R.id.insultButton)
 
         insultButton.setOnClickListener(){
             val intent = Intent(this@MainActivity,Insult::class.java)
             startActivity(intent)
         }
 
-        var intracranialButton = findViewById<Button>(R.id.intracranialButton)
+        val intracranialButton = findViewById<Button>(R.id.intracranialButton)
         intracranialButton.setOnClickListener(){
             val intent = Intent(this@MainActivity,Intracranial::class.java)
             startActivity(intent)
         }
 
-        var subarachButton = findViewById<Button>(R.id.subarButton)
+        val subarachButton = findViewById<Button>(R.id.subarButton)
         subarachButton.setOnClickListener(){
             val intent = Intent(this@MainActivity,Subarach::class.java)
             startActivity(intent)
         }
 
-        var consciousnessButton = findViewById<Button>(R.id.consButton)
+        val consciousnessButton = findViewById<Button>(R.id.consButton)
         consciousnessButton.setOnClickListener(){
             val intent = Intent(this@MainActivity,Consciousness::class.java)
             startActivity(intent)
         }
 
-        var headacheButton = findViewById<Button>(R.id.headacheButton)
+        val headacheButton = findViewById<Button>(R.id.headacheButton)
         headacheButton.setOnClickListener(){
             val intent = Intent(this@MainActivity,MIDAS::class.java)
             startActivity(intent)
         }
 
-        var scleroseButton = findViewById<Button>(R.id.scleroseButton)
-        scleroseButton.setOnClickListener(){
-            val intent = Intent(this@MainActivity,Sclerose::class.java)
-            startActivity(intent)
-        }
 
-        var algover = findViewById<Button>(R.id.algoverBtn)
+        val algover = findViewById<Button>(R.id.algoverBtn)
         algover.setOnClickListener(){
             val intent = Intent(this@MainActivity,Algover::class.java)
             startActivity(intent)
         }
 
-        var ideal = findViewById<Button>(R.id.idealBodyBtn)
+        val ideal = findViewById<Button>(R.id.idealBodyBtn)
         ideal.setOnClickListener(){
             val intent = Intent(this@MainActivity,IdealBody::class.java)
+            startActivity(intent)
+        }
+
+        val skf = findViewById<Button>(R.id.skfCalcBtn)
+        skf.setOnClickListener(){
+            val intent = Intent(this@MainActivity, SKF::class.java)
             startActivity(intent)
         }
 

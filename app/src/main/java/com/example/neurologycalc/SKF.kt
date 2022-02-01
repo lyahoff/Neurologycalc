@@ -75,7 +75,7 @@ class SKF : Activity() {
                     in 15.0..29.9 -> {
                         interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +
                                 "MDRD:  ${df.format(mdrd)} мл/мин / 1,73 кв.м\n\n" +
-                                "Стадия ХБП: IV\tВыраженное снижение СКФ ."
+                                "Стадия ХБП: IV\tВыраженное снижение СКФ."
                     }
                     in 30.0..59.9 -> {
                         interpretation.text = "CKD-EPI: ${df.format(total)} мл/мин / 1,73 кв.м\n\n" +

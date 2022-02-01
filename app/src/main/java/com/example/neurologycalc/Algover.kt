@@ -51,7 +51,7 @@ class Algover : Activity() {
             val df = DecimalFormat("#.##")
 
             when(total){
-                in  0.5..0.79 -> {
+                in  0.1..0.79 -> {
                     interpretation.visibility = TextView.VISIBLE
                     interpretation.text = "Индекс Альговера составляет ${df.format(total)} \n\nНет шока"
                 }

@@ -57,7 +57,19 @@
                 android:id="@+id/scleroseButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Рассеянный склероз" />
+                android:text="Рассеянный склероз EDSS калькулятор" />
+
+            <Button
+                android:id="@+id/algoverBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Индекс Альговера" />
+
+            <Button
+                android:id="@+id/idealBodyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Идеальная масса тела" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

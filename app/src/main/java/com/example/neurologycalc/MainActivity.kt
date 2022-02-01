@@ -47,5 +47,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        var algover = findViewById<Button>(R.id.algoverBtn)
+        algover.setOnClickListener(){
+            val intent = Intent(this@MainActivity,Algover::class.java)
+            startActivity(intent)
+        }
+
+        var ideal = findViewById<Button>(R.id.idealBodyBtn)
+        ideal.setOnClickListener(){
+            val intent = Intent(this@MainActivity,IdealBody::class.java)
+            startActivity(intent)
+        }
+
     }
 }

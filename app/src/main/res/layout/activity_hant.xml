@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hant">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView91"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Шкала Ханта Хесса"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView92"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Шкала Ханта Хесса позволяет оценить риск хирургической летальности у пациентов с нетравматическим субарахноидальным кровоизлиянием."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Критерии"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rbHant1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Бессимптомное течение, возможна слабовыраженная головная боль или ригидность мышц затылка +1 балл" />
+
+                <RadioButton
+                    android:id="@+id/rbHant2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Головная боль умеренная или слабовыраженная; менингеальный синдром выражен; очаговая неврологическая симптоматика отсутствует за исключением возможного поражения глазодвигательных нервов +2 балла" />
+
+                <RadioButton
+                    android:id="@+id/rbHant3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Менингеальный синдром выражен; сознание расстроено до оглушения; очаговая симптоматика умеренно выражена +3 балла" />
+
+                <RadioButton
+                    android:id="@+id/rbHant4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Менингеальный синдром выражен; сознание расстроено до сопора; очаговая симптоматика выражена; имеются признаки нарушения витальных функций +4 балла" />
+
+                <RadioButton
+                    android:id="@+id/rbHant5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Кома различной глубины; акинетический мутизм, децеребрационная ригидность +5 баллов" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Дополнительно"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/chbHant1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Артериальная гипертензия, сахарный диабет, атеросклероз, ХОБЛ или вазоспазм при ангиографии +1 балл" />
+
+            <TextView
+                android:id="@+id/hantInterpretation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Дополнительно"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/hantResultBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Выполнить расчет" />
+
+            <Button
+                android:id="@+id/backFromHant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Вернуться в главное меню" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

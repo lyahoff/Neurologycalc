@@ -39,7 +39,7 @@
                 android:id="@+id/subarButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Субарахноидальное кровоизлияние" />
+                android:text="Субарахноидальное кровоизлияние. Шкала Ханта - Хесса" />
 
             <Button
                 android:id="@+id/consButton"

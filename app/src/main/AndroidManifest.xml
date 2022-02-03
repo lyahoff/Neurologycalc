@@ -10,25 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Neurologycalc">
         <activity
+            android:name=".Hant"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".IdealBody"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Algover"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SKF"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Volume"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Functionality"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Renkin"
             android:exported="false"

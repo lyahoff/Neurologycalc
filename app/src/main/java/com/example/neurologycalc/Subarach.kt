@@ -17,5 +17,11 @@ class Subarach : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val hant = findViewById<Button>(R.id.hantButton)
+        hant.setOnClickListener(){
+            val intent = Intent(this@Subarach,Hant::class.java)
+            startActivity(intent)
+        }
+
     }
 }

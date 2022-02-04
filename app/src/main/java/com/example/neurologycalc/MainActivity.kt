@@ -23,12 +23,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val subarachButton = findViewById<Button>(R.id.subarButton)
-        subarachButton.setOnClickListener(){
-            val intent = Intent(this@MainActivity,Subarach::class.java)
-            startActivity(intent)
-        }
-
         val consciousnessButton = findViewById<Button>(R.id.consButton)
         consciousnessButton.setOnClickListener(){
             val intent = Intent(this@MainActivity,Consciousness::class.java)
@@ -57,6 +51,12 @@ class MainActivity : AppCompatActivity() {
         val skf = findViewById<Button>(R.id.skfCalcBtn)
         skf.setOnClickListener(){
             val intent = Intent(this@MainActivity, SKF::class.java)
+            startActivity(intent)
+        }
+
+        val hant = findViewById<Button>(R.id.subarButton)
+        hant.setOnClickListener(){
+            val intent = Intent(this@MainActivity, Hant::class.java)
             startActivity(intent)
         }
 

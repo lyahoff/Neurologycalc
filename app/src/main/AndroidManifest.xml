@@ -82,10 +82,6 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Subarach"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".Intracranial"
             android:exported="false"
             android:screenOrientation="portrait" />

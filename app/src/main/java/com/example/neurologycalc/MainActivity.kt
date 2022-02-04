@@ -60,5 +60,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val nrs = findViewById<Button>(R.id.nrsBtn)
+        nrs.setOnClickListener(){
+            val intent = Intent(this@MainActivity, Nrs::class.java)
+            startActivity(intent)
+        }
+
     }
 }

@@ -48,6 +48,12 @@
                 android:text="Уровень сознания" />
 
             <Button
+                android:id="@+id/nrsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Шкала NRS (Neurological Raiting Scale)" />
+
+            <Button
                 android:id="@+id/headacheButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

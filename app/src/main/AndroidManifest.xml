@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Neurologycalc">
         <activity
+            android:name=".Nrs"
+            android:exported="false" />
+        <activity
             android:name=".Hant"
             android:exported="false"
             android:screenOrientation="portrait" />

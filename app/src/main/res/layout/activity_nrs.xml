@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Шкала NRS (Neurological Raiting Scale) - шкала используемая для оценки состояния больного рассеянным склерозом. "
+                android:text="Шкала NRS (Neurological Raiting Scale) - шкала используемая для оценки состояния больного рассеянным склерозом. \n\nШкала NRS используется как в клинической практике, так и в целях экспериментальных исследований для оценки степени выраженности обострений и оценки степени восстановления нарушенных функций на фоне проведенного лечения при рассеянном склерозе.\n\nШкала содержит 21 вопрос, охватывающий 13 функций организма, ответ на каждый вопрос варьирует от отсутствия нарушений до нарушения неврологического статуса тяжелой степени. Интерпретация производится по сумме набранных баллов."
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -55,25 +55,25 @@
                 android:layout_height="match_parent" >
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/nrs1_10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="отсутствие изменений в неврологическом статусе +10" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/nrs1_7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="легкая степень выраженности +7" />
 
                 <RadioButton
-                    android:id="@+id/radioButton3"
+                    android:id="@+id/nrs1_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="средняя степень выраженности +4" />
 
                 <RadioButton
-                    android:id="@+id/radioButton4"
+                    android:id="@+id/nrs1_0"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="тяжелая степень выраженности 0" />
@@ -89,6 +89,35 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs2_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +5" />
+
+                <RadioButton
+                    android:id="@+id/nrs2_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs2_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
+
             <TextView
                 android:id="@+id/textView106"
                 android:layout_width="match_parent"
@@ -98,6 +127,33 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/nrs3_6"
+                    android:text="отсутствие изменений в неврологическом статусе +6"/>
+
+                <RadioButton
+                    android:id="@+id/nrs3_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +4" />
+
+                <RadioButton
+                    android:id="@+id/nrs3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +2" />
+
+                <RadioButton
+                    android:id="@+id/nrs3_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/textView107"
@@ -109,6 +165,35 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs4_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +5" />
+
+                <RadioButton
+                    android:id="@+id/nrs4_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs4_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs4_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
+
             <TextView
                 android:id="@+id/textView108"
                 android:layout_width="match_parent"
@@ -118,6 +203,35 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs5_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +5" />
+
+                <RadioButton
+                    android:id="@+id/nrs5_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs5_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs5_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/textView109"
@@ -129,6 +243,35 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs6_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +5" />
+
+                <RadioButton
+                    android:id="@+id/nrs6_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs6_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs6_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
+
             <TextView
                 android:id="@+id/textView110"
                 android:layout_width="match_parent"
@@ -138,6 +281,35 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs7_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +5" />
+
+                <RadioButton
+                    android:id="@+id/nrs7_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs7_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs7_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/textView111"
@@ -149,6 +321,35 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs8_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +5" />
+
+                <RadioButton
+                    android:id="@+id/nrs8_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs8_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs8_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
+
             <TextView
                 android:id="@+id/textView112"
                 android:layout_width="match_parent"
@@ -158,6 +359,35 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs9_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +5" />
+
+                <RadioButton
+                    android:id="@+id/nrs9_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs9_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs9_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/textView113"
@@ -169,6 +399,35 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs10_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +5" />
+
+                <RadioButton
+                    android:id="@+id/nrs10_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs10_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs10_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
+
             <TextView
                 android:id="@+id/textView114"
                 android:layout_width="match_parent"
@@ -178,6 +437,35 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs11_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +4" />
+
+                <RadioButton
+                    android:id="@+id/nrs11_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs11_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs11_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/textView115"
@@ -189,6 +477,35 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs12_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +4" />
+
+                <RadioButton
+                    android:id="@+id/nrs12_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs12_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs12_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
+
             <TextView
                 android:id="@+id/textView116"
                 android:layout_width="match_parent"
@@ -198,6 +515,35 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs13_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +4" />
+
+                <RadioButton
+                    android:id="@+id/nrs13_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs13_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs13_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/textView117"
@@ -209,6 +555,35 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs14_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs14_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +2" />
+
+                <RadioButton
+                    android:id="@+id/nrs14_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs14_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
+
             <TextView
                 android:id="@+id/textView118"
                 android:layout_width="match_parent"
@@ -218,6 +593,35 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs15_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs15_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +2" />
+
+                <RadioButton
+                    android:id="@+id/nrs15_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs15_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/textView119"
@@ -229,6 +633,35 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs16_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs16_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +2" />
+
+                <RadioButton
+                    android:id="@+id/nrs16_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs16_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
+
             <TextView
                 android:id="@+id/textView120"
                 android:layout_width="match_parent"
@@ -238,6 +671,35 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs17_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs17_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +2" />
+
+                <RadioButton
+                    android:id="@+id/nrs17_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs17_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/textView121"
@@ -249,6 +711,35 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs18_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +5" />
+
+                <RadioButton
+                    android:id="@+id/nrs18_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs18_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs18_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
+
             <TextView
                 android:id="@+id/textView122"
                 android:layout_width="match_parent"
@@ -258,6 +749,35 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs19_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +5" />
+
+                <RadioButton
+                    android:id="@+id/nrs19_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +3" />
+
+                <RadioButton
+                    android:id="@+id/nrs19_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +1" />
+
+                <RadioButton
+                    android:id="@+id/nrs19_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/textView123"
@@ -269,6 +789,35 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs20_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе +10" />
+
+                <RadioButton
+                    android:id="@+id/nrs20_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности +7" />
+
+                <RadioButton
+                    android:id="@+id/nrs20_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности +4" />
+
+                <RadioButton
+                    android:id="@+id/nrs20_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности 0" />
+            </RadioGroup>
+
             <TextView
                 android:id="@+id/textView124"
                 android:layout_width="match_parent"
@@ -278,6 +827,58 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/nrs21_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="отсутствие изменений в неврологическом статусе 0" />
+
+                <RadioButton
+                    android:id="@+id/nrs21_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="легкая степень выраженности -1" />
+
+                <RadioButton
+                    android:id="@+id/nrs21_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="средняя степень выраженности -7" />
+
+                <RadioButton
+                    android:id="@+id/nrs21_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="тяжелая степень выраженности -10" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/nrsInterpretation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/nrsResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Выполнить расчет" />
+
+            <Button
+                android:id="@+id/backFromNrs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Вернуться в главное меню" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

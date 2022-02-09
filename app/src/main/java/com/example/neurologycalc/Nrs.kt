@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.RadioButton
+import android.widget.TextView
 
 class Nrs : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +20,8 @@ class Nrs : AppCompatActivity() {
 
         val result = findViewById<Button>(R.id.nrsResult)
         result.setOnClickListener(){
+            val interpretation = findViewById<TextView>(R.id.nrsInterpretation)
+
             val nrs1_10 = findViewById<RadioButton>(R.id.nrs1_10)
             val nrs1_7 = findViewById<RadioButton>(R.id.nrs1_7)
             val nrs1_4 = findViewById<RadioButton>(R.id.nrs1_4)
@@ -156,10 +159,168 @@ class Nrs : AppCompatActivity() {
             if (nrs2_1.isChecked) nrs2 = 1
             if (nrs2_0.isChecked) nrs2 = 0
 
-            var nrsTotal = nrs1 + nrs2+ nrs3+ nrs4+ nrs5+ nrs6+ nrs7+ nrs8+ nrs9+ nrs10+ nrs11+ nrs12+ nrs13+ nrs14+ nrs15+ nrs16+ nrs17+ nrs18+ nrs19+ nrs20 + nrs21
+            if (nrs3_6.isChecked) nrs3 = 6
+            if (nrs3_4.isChecked) nrs3 = 4
+            if (nrs3_2.isChecked) nrs3 = 2
+            if (nrs3_0.isChecked) nrs3 = 0
+
+            if (nrs4_5.isChecked) nrs4 = 5
+            if (nrs4_3.isChecked) nrs4 = 3
+            if (nrs4_1.isChecked) nrs4 = 1
+            if (nrs4_0.isChecked) nrs4 = 0
+
+            if (nrs5_5.isChecked) nrs5 = 5
+            if (nrs5_3.isChecked) nrs5 = 3
+            if (nrs5_1.isChecked) nrs5 = 1
+            if (nrs5_0.isChecked) nrs5 = 0
+
+            if (nrs6_5.isChecked) nrs6 = 5
+            if (nrs6_3.isChecked) nrs6 = 3
+            if (nrs6_1.isChecked) nrs6 = 1
+            if (nrs6_0.isChecked) nrs6 = 0
+
+            if (nrs7_5.isChecked) nrs7 = 5
+            if (nrs7_3.isChecked) nrs7 = 3
+            if (nrs7_1.isChecked) nrs7 = 1
+            if (nrs7_0.isChecked) nrs7 = 0
+
+            if (nrs8_5.isChecked) nrs8 = 5
+            if (nrs8_3.isChecked) nrs8 = 3
+            if (nrs8_1.isChecked) nrs8 = 1
+            if (nrs8_0.isChecked) nrs8 = 0
+
+            if (nrs9_5.isChecked) nrs9 = 5
+            if (nrs9_3.isChecked) nrs9 = 3
+            if (nrs9_1.isChecked) nrs9 = 1
+            if (nrs9_0.isChecked) nrs9 = 0
+
+            if (nrs10_5.isChecked) nrs10 = 5
+            if (nrs10_3.isChecked) nrs10 = 3
+            if (nrs10_1.isChecked) nrs10 = 1
+            if (nrs10_0.isChecked) nrs10 = 0
+
+            if (nrs11_4.isChecked) nrs11 = 4
+            if (nrs11_3.isChecked) nrs11 = 3
+            if (nrs11_1.isChecked) nrs11 = 1
+            if (nrs11_0.isChecked) nrs11 = 0
+
+            if (nrs12_4.isChecked) nrs12 = 4
+            if (nrs12_3.isChecked) nrs12 = 3
+            if (nrs12_1.isChecked) nrs12 = 1
+            if (nrs12_0.isChecked) nrs12 = 0
+
+            if (nrs13_4.isChecked) nrs13 = 4
+            if (nrs13_3.isChecked) nrs13 = 3
+            if (nrs13_1.isChecked) nrs13 = 1
+            if (nrs13_0.isChecked) nrs13 = 0
+
+            if (nrs14_3.isChecked) nrs14 = 3
+            if (nrs14_2.isChecked) nrs14 = 2
+            if (nrs14_1.isChecked) nrs14 = 1
+            if (nrs14_0.isChecked) nrs14 = 0
+
+            if (nrs15_3.isChecked) nrs15 = 3
+            if (nrs15_2.isChecked) nrs15 = 2
+            if (nrs15_1.isChecked) nrs15 = 1
+            if (nrs15_0.isChecked) nrs15 = 0
+
+            if (nrs16_3.isChecked) nrs16 = 3
+            if (nrs16_2.isChecked) nrs16 = 2
+            if (nrs16_1.isChecked) nrs16 = 1
+            if (nrs16_0.isChecked) nrs16 = 0
+
+            if (nrs17_3.isChecked) nrs17 = 3
+            if (nrs17_2.isChecked) nrs17 = 2
+            if (nrs17_1.isChecked) nrs17 = 1
+            if (nrs17_0.isChecked) nrs17 = 0
+
+            if (nrs18_5.isChecked) nrs18 = 5
+            if (nrs18_3.isChecked) nrs18 = 3
+            if (nrs18_1.isChecked) nrs18 = 1
+            if (nrs18_0.isChecked) nrs18 = 0
+
+            if (nrs19_5.isChecked) nrs19 = 5
+            if (nrs19_3.isChecked) nrs19 = 3
+            if (nrs19_1.isChecked) nrs19 = 1
+            if (nrs19_0.isChecked) nrs19 = 0
+
+            if (nrs20_10.isChecked) nrs20 = 10
+            if (nrs20_7.isChecked) nrs20 = 7
+            if (nrs20_4.isChecked) nrs20 = 4
+            if (nrs20_0.isChecked) nrs20 = 0
+
+            if (nrs21_0.isChecked) nrs21 = 0
+            if (nrs21_1.isChecked) nrs21 = -1
+            if (nrs21_7.isChecked) nrs21 = -7
+            if (nrs21_10.isChecked) nrs21 = -10
 
 
 
+            if (!nrs1_10.isChecked&&!nrs1_7.isChecked&&!nrs1_4.isChecked&&!nrs1_0.isChecked&&!nrs2_5.isChecked&&!nrs2_3.isChecked&&!nrs2_1.isChecked&&!nrs2_0.isChecked){
+                interpretation.visibility = TextView.VISIBLE
+                interpretation.text = "Необходимо отметить каждый пункт"
+            }
+            if (!nrs3_6.isChecked&&!nrs3_4.isChecked&&!nrs3_2.isChecked&&!nrs3_0.isChecked&&!nrs4_5.isChecked&&!nrs4_3.isChecked&&!nrs4_1.isChecked&&!nrs4_0.isChecked){
+                interpretation.visibility = TextView.VISIBLE
+                interpretation.text = "Необходимо отметить каждый пункт"
+            }
+            if (!nrs5_5.isChecked&&!nrs5_3.isChecked&&!nrs5_1.isChecked&&!nrs5_0.isChecked&&!nrs6_5.isChecked&&!nrs6_3.isChecked&&!nrs6_1.isChecked&&!nrs6_0.isChecked){
+                interpretation.visibility = TextView.VISIBLE
+                interpretation.text = "Необходимо отметить каждый пункт"
+            }
+            if (!nrs7_5.isChecked&&!nrs7_3.isChecked&&!nrs7_1.isChecked&&!nrs7_0.isChecked&&!nrs8_5.isChecked&&!nrs8_3.isChecked&&!nrs8_1.isChecked&&!nrs8_0.isChecked){
+                interpretation.visibility = TextView.VISIBLE
+                interpretation.text = "Необходимо отметить каждый пункт"
+            }
+            if (!nrs9_5.isChecked&&!nrs9_3.isChecked&&!nrs9_1.isChecked&&!nrs9_0.isChecked&&!nrs10_5.isChecked&&!nrs10_3.isChecked&&!nrs10_1.isChecked&&!nrs10_0.isChecked){
+                interpretation.visibility = TextView.VISIBLE
+                interpretation.text = "Необходимо отметить каждый пункт"
+            }
+            if (!nrs11_4.isChecked&&!nrs11_3.isChecked&&!nrs11_1.isChecked&&!nrs11_0.isChecked&&!nrs12_4.isChecked&&!nrs12_3.isChecked&&!nrs12_1.isChecked&&!nrs12_0.isChecked){
+                interpretation.visibility = TextView.VISIBLE
+                interpretation.text = "Необходимо отметить каждый пункт"
+            }
+            if (!nrs13_4.isChecked&&!nrs13_3.isChecked&&!nrs13_1.isChecked&&!nrs13_0.isChecked&&!nrs14_3.isChecked&&!nrs14_3.isChecked&&!nrs14_1.isChecked&&!nrs14_0.isChecked){
+                interpretation.visibility = TextView.VISIBLE
+                interpretation.text = "Необходимо отметить каждый пункт"
+            }
+            if (!nrs15_3.isChecked&&!nrs15_2.isChecked&&!nrs15_1.isChecked&&!nrs15_0.isChecked&&!nrs16_3.isChecked&&!nrs16_2.isChecked&&!nrs16_1.isChecked&&!nrs16_0.isChecked){
+                interpretation.visibility = TextView.VISIBLE
+                interpretation.text = "Необходимо отметить каждый пункт"
+            }
+            if (!nrs17_3.isChecked&&!nrs17_2.isChecked&&!nrs17_1.isChecked&&!nrs17_0.isChecked&&!nrs18_5.isChecked&&!nrs18_3.isChecked&&!nrs18_1.isChecked&&!nrs18_0.isChecked){
+                interpretation.visibility = TextView.VISIBLE
+                interpretation.text = "Необходимо отметить каждый пункт"
+            }
+            if (!nrs19_5.isChecked&&!nrs19_3.isChecked&&!nrs19_1.isChecked&&!nrs19_0.isChecked&&!nrs20_10.isChecked&&!nrs20_7.isChecked&&!nrs20_4.isChecked&&!nrs20_0.isChecked){
+                interpretation.visibility = TextView.VISIBLE
+                interpretation.text = "Необходимо отметить каждый пункт"
+            }
+            if (!nrs21_0.isChecked&&!nrs21_1.isChecked&&!nrs21_7.isChecked&&!nrs21_10.isChecked){
+                interpretation.visibility = TextView.VISIBLE
+                interpretation.text = "Необходимо отметить каждый пункт"
+            }
+
+            val nrsTotal = nrs1 + nrs2+ nrs3+ nrs4+ nrs5+ nrs6+ nrs7+ nrs8+ nrs9+ nrs10+ nrs11+ nrs12+ nrs13+ nrs14+ nrs15+ nrs16+ nrs17+ nrs18+ nrs19+ nrs20 + nrs21
+
+            when(nrsTotal){
+                in 0..39 -> {
+                    interpretation.visibility = TextView.VISIBLE
+                    interpretation.text = "Набрано $nrsTotal баллов. Тяжелые неврологические нарушения"
+                }
+                in 40..69 -> {
+                    interpretation.visibility = TextView.VISIBLE
+                    interpretation.text = "Набрано $nrsTotal баллов. Неврологические нарушения средней степени тяжести"
+                }
+                in 70..99 -> {
+                    interpretation.visibility = TextView.VISIBLE
+                    interpretation.text = "Набрано $nrsTotal баллов. Неврологические нарушения легкой степени тяжести"
+                }
+                100 -> {
+                    interpretation.visibility = TextView.VISIBLE
+                    interpretation.text = "Набрано $nrsTotal баллов. Отсутствуют изменения в неврологическом статусе"
+                }
+            }
 
 
 

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Epworth">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView125"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Шкала Эпворта"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView126"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Шкала Эпворта (Epworth) - используется для изучения воздействия сна на дневной образ жизни, в совокупности с другими критериями. Этот опросник имеет высокий уровень чувствительности для определения нарушений сна: бессонницы, апноэ во сне, нарколепсии."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView127"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="1. Вероятность задремать читая сидя"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp" >
+
+                <RadioButton
+                    android:id="@+id/Epworth1_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="никогда бы не задремал 0" />
+
+                <RadioButton
+                    android:id="@+id/Epworth1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть небольшой шанс задремать +1" />
+
+                <RadioButton
+                    android:id="@+id/Epworth1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть средняя вероятность задремат +2" />
+
+                <RadioButton
+                    android:id="@+id/Epworth1_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть высокая вероятность задремать +3" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView128"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="2. Вероятность задремать просматривая телепередачи"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp" >
+
+                <RadioButton
+                    android:id="@+id/Epworth2_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="никогда бы не задремал 0" />
+
+                <RadioButton
+                    android:id="@+id/Epworth2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть небольшой шанс задремать +1" />
+
+                <RadioButton
+                    android:id="@+id/Epworth2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть средняя вероятность задремат +2" />
+
+                <RadioButton
+                    android:id="@+id/Epworth2_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть высокая вероятность задремать +3" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView129"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="3. Вероятность задремать сидя в общественном месте без проявления активности (в театре или на собрании)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp" >
+
+                <RadioButton
+                    android:id="@+id/Epworth3_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="никогда бы не задремал 0" />
+
+                <RadioButton
+                    android:id="@+id/Epworth3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть небольшой шанс задремать +1" />
+
+                <RadioButton
+                    android:id="@+id/Epworth3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть средняя вероятность задремат +2" />
+
+                <RadioButton
+                    android:id="@+id/Epworth3_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть высокая вероятность задремать +3" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView130"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="4. Вероятность задремать в качестве пассажира в машине при движении без остановки в течение часа"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp" >
+
+                <RadioButton
+                    android:id="@+id/Epworth4_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="никогда бы не задремал 0" />
+
+                <RadioButton
+                    android:id="@+id/Epworth4_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть небольшой шанс задремать +1" />
+
+                <RadioButton
+                    android:id="@+id/Epworth4_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть средняя вероятность задремат +2" />
+
+                <RadioButton
+                    android:id="@+id/Epworth4_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть высокая вероятность задремать +3" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView131"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="5. Вероятность задремать во время отдыха в кровати во второй половине дня, если позволяет ситуация"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp" >
+
+                <RadioButton
+                    android:id="@+id/Epworth5_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="никогда бы не задремал 0" />
+
+                <RadioButton
+                    android:id="@+id/Epworth5_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть небольшой шанс задремать +1" />
+
+                <RadioButton
+                    android:id="@+id/Epworth5_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть средняя вероятность задремат +2" />
+
+                <RadioButton
+                    android:id="@+id/Epworth5_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть высокая вероятность задремать +3" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView132"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="6. Вероятность задремать сидя в спокойной обстановке после обеда без потребления алкоголя"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp" >
+
+                <RadioButton
+                    android:id="@+id/Epworth6_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="никогда бы не задремал 0" />
+
+                <RadioButton
+                    android:id="@+id/Epworth6_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть небольшой шанс задремать +1" />
+
+                <RadioButton
+                    android:id="@+id/Epworth6_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть средняя вероятность задремат +2" />
+
+                <RadioButton
+                    android:id="@+id/Epworth6_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть высокая вероятность задремать +3" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView133"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="7. Вероятность задремать сидя и разговаривая с кем-либо"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp" >
+
+                <RadioButton
+                    android:id="@+id/Epworth7_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="никогда бы не задремал 0" />
+
+                <RadioButton
+                    android:id="@+id/Epworth7_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть небольшой шанс задремать +1" />
+
+                <RadioButton
+                    android:id="@+id/Epworth7_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть средняя вероятность задремат +2" />
+
+                <RadioButton
+                    android:id="@+id/Epworth7_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть высокая вероятность задремать +3" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView134"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="8. Вероятность задремать за рулём машины, остановившись на несколько минут на светофоре или в пробке"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp" >
+
+                <RadioButton
+                    android:id="@+id/Epworth8_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="никогда бы не задремал 0" />
+
+                <RadioButton
+                    android:id="@+id/Epworth8_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть небольшой шанс задремать +1" />
+
+                <RadioButton
+                    android:id="@+id/Epworth8_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть средняя вероятность задремат +2" />
+
+                <RadioButton
+                    android:id="@+id/Epworth8_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="есть высокая вероятность задремать +3" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/epInterpretation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:visibility="gone" />
+
+            <Button
+                android:id="@+id/EpworthResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Выполнить расчет" />
+
+            <Button
+                android:id="@+id/backFromEpworth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Вернуться в главное меню" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

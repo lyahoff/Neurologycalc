@@ -48,95 +48,49 @@ class FOUR : AppCompatActivity() {
         var totalBreath = 0
         var total = 0
 
-
-
-
-
         val getResultFOUR = findViewById<Button>(R.id.getResultFour)
         getResultFOUR.setOnClickListener(){
 
-            if (eyeFOUR4.isChecked){
-                totalEye = 4
-            }
-            if (eyeFOUR3.isChecked){
-                totalEye = 3
-            }
-            if (eyeFOUR2.isChecked){
-                totalEye = 2
-            }
-            if (eyeFOUR1.isChecked){
-                totalEye = 1
-            }
-            if (eyeFOUR0.isChecked){
-                totalEye = 0
-            }
+            if (eyeFOUR4.isChecked) totalEye = 4
+            if (eyeFOUR3.isChecked) totalEye = 3
+            if (eyeFOUR2.isChecked) totalEye = 2
+            if (eyeFOUR1.isChecked) totalEye = 1
+            if (eyeFOUR0.isChecked) totalEye = 0
 
-            if (motorFOUR4.isChecked){
-                totalMotor = 4
-            }
-            if (motorFOUR3.isChecked){
-                totalMotor = 3
-            }
-            if (motorFOUR2.isChecked){
-                totalMotor = 2
-            }
-            if (motorFOUR1.isChecked){
-                totalMotor = 1
-            }
-            if (motorFOUR0.isChecked){
-                totalMotor = 0
-            }
+            if (motorFOUR4.isChecked) totalMotor = 4
+            if (motorFOUR3.isChecked) totalMotor = 3
+            if (motorFOUR2.isChecked) totalMotor = 2
+            if (motorFOUR1.isChecked) totalMotor = 1
+            if (motorFOUR0.isChecked) totalMotor = 0
 
-            if (reflexFOUR4.isChecked){
-                totalReflex = 4
-            }
-            if (reflexFOUR3.isChecked){
-                totalReflex = 3
-            }
-            if (reflexFOUR2.isChecked){
-                totalReflex = 2
-            }
-            if (reflexFOUR1.isChecked){
-                totalReflex = 1
-            }
-            if (reflexFOUR0.isChecked){
-                totalReflex = 0
-            }
+            if (reflexFOUR4.isChecked) totalReflex = 4
+            if (reflexFOUR3.isChecked) totalReflex = 3
+            if (reflexFOUR2.isChecked) totalReflex = 2
+            if (reflexFOUR1.isChecked) totalReflex = 1
+            if (reflexFOUR0.isChecked) totalReflex = 0
 
-            if (breathFOUR4.isChecked){
-                totalBreath = 4
-            }
-            if (breathFOUR3.isChecked){
-                totalBreath = 3
-            }
-            if (breathFOUR2.isChecked){
-                totalBreath = 2
-            }
-            if (breathFOUR1.isChecked){
-                totalBreath = 1
-            }
-            if (breathFOUR0.isChecked){
-                totalBreath = 0
-            }
+            if (breathFOUR4.isChecked) totalBreath = 4
+            if (breathFOUR3.isChecked) totalBreath = 3
+            if (breathFOUR2.isChecked) totalBreath = 2
+            if (breathFOUR1.isChecked) totalBreath = 1
+            if (breathFOUR0.isChecked) totalBreath = 0
+
 
             total = totalEye + totalMotor + totalReflex + totalBreath
-            var interpretationFour = findViewById<TextView>(R.id.interpretationFOURTxt)
-            var resultFOUR = findViewById<TextView>(R.id.resultFOURTxt)
+
+            val interpretationFour = findViewById<TextView>(R.id.interpretationFOURTxt)
+            val resultFOUR = findViewById<TextView>(R.id.resultFOURTxt)
 
             resultFOUR.text = "Сумма баллов составляет $total"
 
             when(total){
-                0 -> {
+                in 0..3 -> {
                     interpretationFour.visibility = TextView.VISIBLE
-                    interpretationFour.text = "Кома III"
+                    interpretationFour.text = "Смерть мозга"
                 }
-                in 1..6 -> {
+                in 4..8 -> {
                     interpretationFour.visibility = TextView.VISIBLE
-                    interpretationFour.text = "Кома II"
-                }
-                in 7..8 -> {
-                    interpretationFour.visibility = TextView.VISIBLE
-                    interpretationFour.text = "Кома I"
+                    interpretationFour.text = "Кома"
                 }
                 in 9..12 -> {
                     interpretationFour.visibility = TextView.VISIBLE
@@ -144,11 +98,11 @@ class FOUR : AppCompatActivity() {
                 }
                 in 13..14 -> {
                     interpretationFour.visibility = TextView.VISIBLE
-                    interpretationFour.text = "Глубокое оглушение"
+                    interpretationFour.text = "Оглушение"
                 }
                 15 -> {
                     interpretationFour.visibility = TextView.VISIBLE
-                    interpretationFour.text = "Умеренное оглушение"
+                    interpretationFour.text = "Сомноленция"
                 }
                 16 -> {
                     interpretationFour.visibility = TextView.VISIBLE

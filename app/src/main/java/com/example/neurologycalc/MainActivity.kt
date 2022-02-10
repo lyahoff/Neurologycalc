@@ -66,5 +66,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val epworth = findViewById<Button>(R.id.EpworthBtn)
+        epworth.setOnClickListener(){
+            val intent = Intent(this@MainActivity, Epworth::class.java)
+            startActivity(intent)
+        }
+
     }
 }

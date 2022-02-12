@@ -60,12 +60,6 @@
                 android:text="Шкала Рэнкина" />
 
             <Button
-                android:id="@+id/scoreBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Шкала SCORE" />
-
-            <Button
                 android:id="@+id/backToMain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

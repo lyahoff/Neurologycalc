@@ -75,27 +75,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Введите количество креатинина"
+                android:hint="Введите количество креатинина мкмоль/л"
                 android:inputType="number"
-                android:maxLength="3" />
+                android:maxLength="4"
+                android:minHeight="48dp" />
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <RadioButton
-                    android:id="@+id/btnMol"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="мкмоль/л" />
-
-                <RadioButton
-                    android:id="@+id/btnMg"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="мг/дл" />
-
-            </RadioGroup>
+                android:layout_height="match_parent" />
 
             <TextView
                 android:id="@+id/textView90"
@@ -115,6 +102,7 @@
                 android:ems="10"
                 android:inputType="number"
                 android:maxLength="3"
+                android:minHeight="48dp"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView

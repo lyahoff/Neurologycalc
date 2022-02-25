@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Neurologycalc">
         <activity
+            android:name=".About"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Epworth"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Nrs"
             android:exported="false"

@@ -82,6 +82,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Калькулятор СКФ и клиренса креатинина" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/aboutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="48dp"
+                android:background="@color/design_default_color_error"
+                android:text="О приложении"
+                android:textColor="@color/material_on_primary_emphasis_high_type" />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

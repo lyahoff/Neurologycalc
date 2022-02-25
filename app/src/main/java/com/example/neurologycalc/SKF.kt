@@ -28,8 +28,6 @@ class SKF : Activity() {
 
         val male = findViewById<RadioButton>(R.id.btnMale)
         val female = findViewById<RadioButton>(R.id.btnFemale)
-        val mkm = findViewById<RadioButton>(R.id.btnMol)
-        val mg = findViewById<RadioButton>(R.id.btnMg)
 
         val interpretation = findViewById<TextView>(R.id.skfInterpretation)
 
@@ -60,7 +58,7 @@ class SKF : Activity() {
             }
 
 
-            if (crtResult<=62 && female.isChecked && mkm.isChecked){
+            if (crtResult<=62 && female.isChecked){
                 total = 144 * (0.993.pow(ageResult)) * pow(((crtResult/88.4)/0.7),-0.328)
                 mdrd = 175 * pow(crtResult/88.4,-1.154) * pow(ageResult,-0.203) * 0.742
                 val df = DecimalFormat("#")
@@ -95,7 +93,7 @@ class SKF : Activity() {
                 }
 
             }
-            if (crtResult>62 && female.isChecked && mkm.isChecked){
+            if (crtResult>62 && female.isChecked){
                 total = 144 * (0.993.pow(ageResult)) * pow(((crtResult/88.4)/0.7),-1.210)
                 mdrd = 175 * pow(crtResult/88.4,-1.154) * pow(ageResult,-0.203) * 0.742
                 val df = DecimalFormat("#")
@@ -129,7 +127,7 @@ class SKF : Activity() {
                 }
             }
 
-            if (crtResult<=80 && male.isChecked && mkm.isChecked){
+            if (crtResult<=80 && male.isChecked){
                 total = 141 * (0.993.pow(ageResult)) * pow(((crtResult/88.4)/0.9),-0.412)
                 mdrd = 175 * pow(crtResult/88.4,-1.154) * pow(ageResult,-0.203)
                 val df = DecimalFormat("#")
@@ -162,7 +160,7 @@ class SKF : Activity() {
                     }
                 }
             }
-            if (crtResult>80 && male.isChecked && mkm.isChecked){
+            if (crtResult>80 && male.isChecked){
                 total = 141 * (0.993.pow(ageResult)) * pow(((crtResult/88.4)/0.9),-1.210)
                 mdrd = 175 * pow(crtResult/88.4,-1.154) * pow(ageResult,-0.203)
                 val df = DecimalFormat("#")

@@ -72,5 +72,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val about = findViewById<Button>(R.id.aboutBtn)
+        about.setOnClickListener(){
+            val intent = Intent(this@MainActivity, About::class.java)
+            startActivity(intent)
+        }
+
     }
 }

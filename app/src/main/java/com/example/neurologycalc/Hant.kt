@@ -16,6 +16,7 @@ class Hant : AppCompatActivity() {
         val back = findViewById<Button>(R.id.backFromHant)
         back.setOnClickListener(){
             val intent = Intent(this@Hant, MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

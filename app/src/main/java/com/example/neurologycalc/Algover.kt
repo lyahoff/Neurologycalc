@@ -17,6 +17,7 @@ class Algover : Activity() {
         val back = findViewById<Button>(R.id.backFromAlgover)
         back.setOnClickListener(){
             val intent = Intent(this@Algover, MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

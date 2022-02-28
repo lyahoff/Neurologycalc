@@ -92,6 +92,15 @@
                 android:text="О приложении"
                 android:textColor="@color/material_on_primary_emphasis_high_type" />
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/exitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="48dp"
+                android:background="@android:color/holo_green_dark"
+                android:text="Выход"
+                android:textColor="@color/material_on_primary_emphasis_high_type" />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

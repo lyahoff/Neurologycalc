@@ -15,6 +15,7 @@ class Functionality : AppCompatActivity() {
         val back = findViewById<Button>(R.id.backFromFunctionalityBtn)
         back.setOnClickListener(){
             val intent = Intent(this@Functionality, MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

@@ -16,6 +16,7 @@ class GlazgoScreen : AppCompatActivity() {
         var backFromGlazgo = findViewById<Button>(R.id.backFromGlazgo)
         backFromGlazgo.setOnClickListener(){
             val intent = Intent(this@GlazgoScreen,MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

@@ -14,6 +14,7 @@ class Consciousness : AppCompatActivity() {
         val consciousnessButton = findViewById<Button>(R.id.backFromConsciousnessButton)
         consciousnessButton.setOnClickListener(){
             val intent = Intent(this@Consciousness,MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

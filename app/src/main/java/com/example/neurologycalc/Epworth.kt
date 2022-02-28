@@ -15,6 +15,7 @@ class Epworth : AppCompatActivity() {
         val back = findViewById<Button>(R.id.backFromEpworth)
         back.setOnClickListener(){
             val intent = Intent(this@Epworth, MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

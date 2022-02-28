@@ -15,6 +15,7 @@ class Nihss : AppCompatActivity() {
         val back = findViewById<Button>(R.id.backFromNihss)
         back.setOnClickListener(){
             val intent = Intent(this@Nihss,MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

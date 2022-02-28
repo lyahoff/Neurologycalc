@@ -13,6 +13,7 @@ class Insult : AppCompatActivity() {
         val backToMain = findViewById<Button>(R.id.backToMain)
         backToMain.setOnClickListener(){
             val intent = Intent(this@Insult,MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

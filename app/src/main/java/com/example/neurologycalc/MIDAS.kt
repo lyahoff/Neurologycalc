@@ -17,6 +17,7 @@ class MIDAS : Activity() {
         val backButton = findViewById<Button>(R.id.backFromMidas)
         backButton.setOnClickListener(){
             val intent = Intent(this@MIDAS, MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

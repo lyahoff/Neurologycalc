@@ -15,6 +15,7 @@ class FOUR : AppCompatActivity() {
         val backFromFOUR = findViewById<Button>(R.id.backFromFour)
         backFromFOUR.setOnClickListener(){
             val intent = Intent(this@FOUR, MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

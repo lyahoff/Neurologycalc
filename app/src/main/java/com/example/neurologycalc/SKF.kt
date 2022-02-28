@@ -20,6 +20,7 @@ class SKF : Activity() {
         val back = findViewById<Button>(R.id.backFromSkf)
         back.setOnClickListener() {
             val intent = Intent(this@SKF, MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

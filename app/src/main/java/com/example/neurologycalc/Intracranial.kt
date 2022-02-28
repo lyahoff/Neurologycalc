@@ -14,6 +14,7 @@ class Intracranial : AppCompatActivity() {
         val backToMainButton = findViewById<Button>(R.id.backToMainButton)
         backToMainButton.setOnClickListener(){
             val intent = Intent(this@Intracranial,MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

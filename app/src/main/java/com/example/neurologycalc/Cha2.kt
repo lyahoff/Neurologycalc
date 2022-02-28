@@ -16,6 +16,7 @@ class Cha2 : AppCompatActivity() {
         val back = findViewById<Button>(R.id.backFromCha2)
         back.setOnClickListener(){
             val intent = Intent(this@Cha2,MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

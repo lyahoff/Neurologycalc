@@ -17,6 +17,7 @@ class IdealBody : Activity() {
         val back = findViewById<Button>(R.id.backFromIdealBtn)
         back.setOnClickListener(){
             val intent = Intent(this@IdealBody,MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

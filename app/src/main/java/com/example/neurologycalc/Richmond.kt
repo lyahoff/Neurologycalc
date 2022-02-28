@@ -16,6 +16,7 @@ class Richmond : AppCompatActivity() {
 
         backFromRichmond.setOnClickListener() {
             val intent = Intent(this@Richmond, MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

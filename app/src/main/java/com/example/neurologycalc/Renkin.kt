@@ -15,6 +15,7 @@ class Renkin : AppCompatActivity() {
         val back = findViewById<Button>(R.id.backFromRenkinBtn)
         back.setOnClickListener(){
             val intent = Intent(this@Renkin, MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

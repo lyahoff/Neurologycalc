@@ -13,6 +13,7 @@ class About : AppCompatActivity() {
         val back = findViewById<Button>(R.id.backFromAbout)
         back.setOnClickListener(){
             val intent = Intent(this@About, MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

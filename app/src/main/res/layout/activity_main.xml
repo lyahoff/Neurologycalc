@@ -88,7 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="48dp"
-                android:background="@color/design_default_color_error"
+                android:background="@android:color/holo_green_light"
                 android:text="О приложении"
                 android:textColor="@color/material_on_primary_emphasis_high_type" />
 
@@ -97,7 +97,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="48dp"
-                android:background="@android:color/holo_green_dark"
+                android:background="@android:color/holo_red_dark"
                 android:text="Выход"
                 android:textColor="@color/material_on_primary_emphasis_high_type" />
 

@@ -23,36 +23,54 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/glazgoButton"
+                android:text="Шкала комы Глазго"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Шкала комы Глазго" />
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/glazgoChildrenButton"
+                android:text="Детская шкала комы Глазго"
+                android:layout_marginTop="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Детская шкала комы Глазго" />
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/fourButton"
+                android:text="Шкала комы FOUR"
+                android:layout_marginTop="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Шкала комы FOUR" />
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/richmondButton"
+                android:text="Шкала возбуждения-седации Ричмонда"
+                android:layout_marginTop="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Шкала возбуждения-седации Ричмонда" />
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/backFromConsciousnessButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="Вернуться в главное меню" />
+                android:text="Вернуться в главное меню"
+                android:background="@color/orangeBtn"
+                android:textColor="@color/darkBlueBtn">
+            </androidx.appcompat.widget.AppCompatButton>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

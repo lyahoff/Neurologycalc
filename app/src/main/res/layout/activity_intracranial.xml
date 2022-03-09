@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Intracranial">
+    tools:context=".Intracranial"
+    android:background="@color/grayBackgrnd">
 
     <ScrollView
         android:layout_width="0dp"
@@ -23,24 +24,35 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Button
+
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/rateButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Оценка функциональной самостоятельности после внутричерепного кровоизлияния" />
+                android:text="Оценка функциональной самостоятельности после внутричерепного кровоизлияния"
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/volumeButton"
+                android:layout_marginTop="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Расчет объема внутричерепного кровоизлияния" />
+                android:text="Расчет объема внутричерепного кровоизлияния"
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/backToMainButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="Вернуться в главное меню" />
+                android:background="@color/orangeBtn"
+                android:text="Вернуться в главное меню"
+                android:textColor="@color/darkBlueBtn">
+            </androidx.appcompat.widget.AppCompatButton>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

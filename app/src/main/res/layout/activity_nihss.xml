@@ -742,19 +742,25 @@
                 android:textStyle="bold"
                 android:visibility="gone" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/nihssResult"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
-                android:text="Получить результат" />
+                android:layout_marginTop="32dp"
+                android:text="Выполнить расчет"
+                android:background="@color/orangeBtn"
+                android:textColor="@color/darkBlueBtn">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/backFromNihss"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="Вернуться в меню инсульта" />
+                android:text="Вернуться в главное меню"
+                android:background="@color/blueBtn"
+                android:textColor="@color/darkBlueBtn">
+            </androidx.appcompat.widget.AppCompatButton>
 
         </LinearLayout>
     </ScrollView>

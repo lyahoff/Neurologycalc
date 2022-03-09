@@ -228,20 +228,25 @@
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/getResultFour"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Получить результат"
-                android:textColor="@color/white" />
+                android:layout_marginTop="32dp"
+                android:text="Выполнить расчет"
+                android:background="@color/orangeBtn"
+                android:textColor="@color/darkBlueBtn">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/backFromFour"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="Вернуться в меню уровня сознания" />
+                android:text="Вернуться в меню уровня сознания"
+                android:background="@color/blueBtn"
+                android:textColor="@color/darkBlueBtn">
+            </androidx.appcompat.widget.AppCompatButton>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -52,12 +52,25 @@
                 android:textStyle="bold"
                 tools:visibility="gone" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/rtpaResultBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="Выполнить расчет" />
+                android:text="Выполнить расчет"
+                android:background="@color/orangeBtn"
+                android:textColor="@color/darkBlueBtn">
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/backFromRtpaBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Вернуться в главное меню"
+                android:background="@color/blueBtn"
+                android:textColor="@color/darkBlueBtn">
+            </androidx.appcompat.widget.AppCompatButton>
 
             <TextView
                 android:id="@+id/textView64"
@@ -158,12 +171,6 @@
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
-            <Button
-                android:id="@+id/backFromRtpaBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:text="Вернуться в меню инсульта" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

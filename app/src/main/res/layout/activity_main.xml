@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/grayBackgrnd">
 
     <ScrollView
         android:layout_width="0dp"
@@ -23,83 +24,122 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/insultButton"
+            <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ишемический инсульт и профилактика сердечно-сосудистых заболеваний" />
+                android:id="@+id/insultButton"
+                android:text="Ишемический инсульт и профилактика сердечно-сосудистых заболеваний"
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd" >
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/intracranialButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Внутричерепное кровоизлияние" />
+                android:layout_marginTop="4dp"
+                android:background="@color/darkBlueBtn"
+                android:text="Внутричерепное кровоизлияние"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/subarButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Субарахноидальное кровоизлияние. Шкала Ханта - Хесса" />
+                android:layout_marginTop="4dp"
+                android:background="@color/darkBlueBtn"
+                android:text="Субарахноидальное кровоизлияние. \nШкала Ханта - Хесса"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/consButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Уровень сознания" />
+                android:layout_marginTop="4dp"
+                android:background="@color/darkBlueBtn"
+                android:text="Уровень сознания"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/nrsBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Шкала NRS (Neurological Raiting Scale)" />
+                android:layout_marginTop="4dp"
+                android:background="@color/darkBlueBtn"
+                android:text="Шкала NRS (Neurological Raiting Scale)"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/EpworthBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Шкала Эпворта" />
+                android:layout_marginTop="4dp"
+                android:text="Шкала Эпворта"
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/headacheButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Оценка головной боли по шкале MIDAS" />
+                android:layout_marginTop="4dp"
+                android:text="Оценка головной боли по шкале MIDAS"
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/algoverBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Индекс Альговера" />
+                android:layout_marginTop="4dp"
+                android:text="Индекс Альговера"
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/idealBodyBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Идеальная масса тела" />
+                android:layout_marginTop="4dp"
+                android:text="Идеальная масса тела"
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/skfCalcBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Калькулятор СКФ и клиренса креатинина" />
+                android:layout_marginTop="4dp"
+                android:text="Калькулятор СКФ и клиренса креатинина"
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/aboutBtn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="48dp"
-                android:background="@android:color/holo_green_light"
+                android:background="@color/orangeBtn"
                 android:text="О приложении"
-                android:textColor="@color/material_on_primary_emphasis_high_type" />
+                android:textColor="@color/darkBlueBtn" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/exitBtn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="48dp"
-                android:background="@android:color/holo_red_dark"
+                android:background="@color/blueBtn"
                 android:text="Выход"
-                android:textColor="@color/material_on_primary_emphasis_high_type" />
+                android:textColor="@color/darkBlueBtn"/>
 
         </LinearLayout>
     </ScrollView>

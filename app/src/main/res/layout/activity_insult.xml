@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Insult">
+    tools:context=".Insult"
+    android:background="@color/grayBackgrnd">
 
     <ScrollView
         android:layout_width="0dp"
@@ -23,48 +24,76 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Button
+
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/nihssBtn"
+                android:text="Шкала инсульта национального института здоровья (NIHSS)"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Шкала инсульта национального института здоровья (NIHSS)" />
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/cha2Btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Шкала CHA2DS2-VASC (оценки риска инсульта и системной тромбоэмболии у пациентов с фибрилляцией предсердий)" />
+                android:text="Шкала CHA2DS2-VASC (оценки риска инсульта и системной тромбоэмболии у пациентов с фибрилляцией предсердий)"
+                android:layout_marginTop="4dp"
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/hasBledBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Шкала HAS-BLED (оценки риска кровотечений при мерцательной аритмии)" />
+                android:text="Шкала HAS-BLED (оценки риска кровотечений при мерцательной аритмии)"
+                android:layout_marginTop="4dp"
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/abcd2Btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Шкала ABCD2" />
+                android:text="Шкала ABCD2"
+                android:layout_marginTop="4dp"
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/rtpaBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Расчет дозы rt-PA" />
+                android:text="Расчет дозы rt-PA"
+                android:layout_marginTop="4dp"
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/renkinBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Шкала Рэнкина" />
+                android:text="Шкала Рэнкина"
+                android:layout_marginTop="4dp"
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd">
+            </androidx.appcompat.widget.AppCompatButton>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/backToMain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="Вернуться в главное меню" />
+                android:background="@color/orangeBtn"
+                android:text="Вернуться в главное меню"
+                android:textColor="@color/darkBlueBtn">
+            </androidx.appcompat.widget.AppCompatButton>
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

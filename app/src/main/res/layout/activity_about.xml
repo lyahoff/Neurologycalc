@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".About">
+    tools:context=".About"
+    android:background="@color/grayBackgrnd">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -19,22 +20,24 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView135"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="48dp"
-                android:text="Внимание!  \n\nДанное приложение является набором калькуляторов для использования медицинскими работниками. Все результаты, которые получены в результате использования приложения необходимо интерпретировать врачами. Результаты вычислений данных калькуляторов не являются диагнозами.  \n\nЕсли вы продолжаете использование приложения, то полностью согласны с информацией выше. \n\nЕсли не согласны, то рекомендуется удалить данное приложение."
+                android:text="Внимание!  \n\nДанное приложение является набором калькуляторов для использования медицинскими работниками. Все результаты, которые получены в результате использования приложения необходимо интерпретировать врачами. Результаты вычислений данных калькуляторов не являются диагнозами.\n\nВсе калькуляторы взяты из сети интернет, и находятся в свободном доступе.  \n\nЕсли вы продолжаете использование приложения, то полностью согласны с информацией выше. \n\nЕсли не согласны, то рекомендуется удалить данное приложение."
                 android:textColor="@color/black" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/backFromAbout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="72dp"
-                android:text="Данное сообщение мной прочитано. Вернуться в главное меню" />
+                android:layout_height="match_parent"
+                android:layout_marginTop="48dp"
+                android:text="Данное сообщение мной прочитано.\nВернуться в главное меню"
+                android:background="@color/darkBlueBtn"
+                android:textColor="@color/grayBackgrnd" />
         </LinearLayout>
     </ScrollView>
 

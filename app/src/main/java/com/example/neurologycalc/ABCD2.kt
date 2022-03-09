@@ -18,6 +18,7 @@ class ABCD2 : AppCompatActivity() {
         val back = findViewById<Button>(R.id.backFromAbcd)
         back.setOnClickListener(){
             val intent = Intent(this@ABCD2,Insult::class.java)
+            finish()
             startActivity(intent)
         }
 

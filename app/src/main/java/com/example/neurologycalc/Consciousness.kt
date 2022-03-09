@@ -23,24 +23,28 @@ class Consciousness : AppCompatActivity() {
         val glazgoButton = findViewById<Button>(R.id.glazgoButton)
         glazgoButton.setOnClickListener(){
             val intent = Intent(this@Consciousness,GlazgoScreen::class.java)
+            finish()
             startActivity(intent)
         }
 
         val glazgoChildrenButton = findViewById<Button>(R.id.glazgoChildrenButton)
         glazgoChildrenButton.setOnClickListener(){
             val intent = Intent(this@Consciousness,GlazgoChildren::class.java)
+            finish()
             startActivity(intent)
         }
 
         val fourButton = findViewById<Button>(R.id.fourButton)
         fourButton.setOnClickListener(){
             val intent = Intent(this@Consciousness, FOUR::class.java)
+            finish()
             startActivity(intent)
         }
 
         val richmondButton = findViewById<Button>(R.id.richmondButton)
         richmondButton.setOnClickListener(){
             val intent = Intent(this@Consciousness, Richmond::class.java)
+            finish()
             startActivity(intent)
         }
 

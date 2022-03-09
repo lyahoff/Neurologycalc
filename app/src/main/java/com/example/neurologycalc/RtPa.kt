@@ -17,6 +17,7 @@ class RtPa : AppCompatActivity() {
         val back = findViewById<Button>(R.id.backFromRtpaBtn)
         back.setOnClickListener(){
             val intent = Intent(this@RtPa, Insult::class.java)
+            finish()
             startActivity(intent)
         }
         val result = findViewById<Button>(R.id.rtpaResultBtn)

@@ -18,6 +18,7 @@ class Volume : Activity() {
         val back = findViewById<Button>(R.id.backFromVolume)
         back.setOnClickListener(){
             val intent = Intent(this@Volume, Intracranial::class.java)
+            finish()
             startActivity(intent)
         }
 

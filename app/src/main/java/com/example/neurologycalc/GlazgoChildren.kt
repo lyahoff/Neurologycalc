@@ -16,7 +16,8 @@ class GlazgoChildren : AppCompatActivity() {
 
         var backFromGlazgoChildren = findViewById<Button>(R.id.backFromGlazgoChildren)
         backFromGlazgoChildren.setOnClickListener(){
-            val intent = Intent(this@GlazgoChildren, MainActivity::class.java)
+            val intent = Intent(this@GlazgoChildren, Consciousness::class.java)
+            finish()
             startActivity(intent)
         }
 

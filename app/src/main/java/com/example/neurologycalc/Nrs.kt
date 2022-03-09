@@ -17,6 +17,7 @@ class Nrs : AppCompatActivity() {
         val back = findViewById<Button>(R.id.backFromNrs)
         back.setOnClickListener(){
             val intent = Intent(this@Nrs,MainActivity::class.java)
+            finish()
             startActivity(intent)
         }
 

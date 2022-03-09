@@ -17,6 +17,7 @@ class Functionality : AppCompatActivity() {
         val back = findViewById<Button>(R.id.backFromFunctionalityBtn)
         back.setOnClickListener(){
             val intent = Intent(this@Functionality, Intracranial::class.java)
+            finish()
             startActivity(intent)
         }
 

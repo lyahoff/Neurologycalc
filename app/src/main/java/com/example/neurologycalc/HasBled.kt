@@ -30,6 +30,7 @@ class HasBled : AppCompatActivity() {
         val back = findViewById<Button>(R.id.backFromHas)
         back.setOnClickListener(){
             val intent = Intent(this@HasBled,Insult::class.java)
+            finish()
             startActivity(intent)
         }
 

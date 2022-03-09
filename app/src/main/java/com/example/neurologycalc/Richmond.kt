@@ -17,7 +17,8 @@ class Richmond : AppCompatActivity() {
         val backFromRichmond = findViewById<Button>(R.id.backFromRichmond)
 
         backFromRichmond.setOnClickListener() {
-            val intent = Intent(this@Richmond, MainActivity::class.java)
+            val intent = Intent(this@Richmond, Consciousness::class.java)
+            finish()
             startActivity(intent)
         }
 

@@ -23,12 +23,14 @@ class Intracranial : AppCompatActivity() {
         val rate = findViewById<Button>(R.id.rateButton)
         rate.setOnClickListener(){
             val intent = Intent(this@Intracranial,Functionality::class.java)
+            finish()
             startActivity(intent)
         }
 
         val volume = findViewById<Button>(R.id.volumeButton)
         volume.setOnClickListener(){
             val intent = Intent(this@Intracranial,Volume::class.java)
+            finish()
             startActivity(intent)
         }
 

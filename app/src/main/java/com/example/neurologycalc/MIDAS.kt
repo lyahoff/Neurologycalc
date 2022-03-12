@@ -9,18 +9,25 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.google.android.gms.ads.AdError
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.FullScreenContentCallback
+import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 
 
 class MIDAS : Activity() {
+    private var mInterstitialAd: InterstitialAd? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_midas)
+        loadInterAd()
 
         val backButton = findViewById<Button>(R.id.backFromMidas)
         backButton.setOnClickListener(){
-            val intent = Intent(this@MIDAS, MainActivity::class.java)
-            finish()
-            startActivity(intent)
+            showInterAd()
+
         }
 
         var midas1 = findViewById<EditText>(R.id.midas1)
@@ -124,5 +131,59 @@ class MIDAS : Activity() {
             decorView.setSystemUiVisibility(uiOptions)
         }
 
+    }
+
+    private fun showInterAd() {
+        if (mInterstitialAd != null ){
+
+            mInterstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback(){
+                override fun onAdClicked() {
+                    super.onAdClicked()
+                }
+
+                override fun onAdDismissedFullScreenContent() {
+                    super.onAdDismissedFullScreenContent()
+                    val intent = Intent(this@MIDAS, MainActivity::class.java)
+                    finish()
+                    startActivity(intent)
+                }
+
+                override fun onAdFailedToShowFullScreenContent(p0: AdError) {
+                    super.onAdFailedToShowFullScreenContent(p0)
+                }
+
+                override fun onAdImpression() {
+                    super.onAdImpression()
+                }
+
+                override fun onAdShowedFullScreenContent() {
+                    super.onAdShowedFullScreenContent()
+                }
+
+            }
+
+            mInterstitialAd?.show(this)
+
+        }else{
+            val intent = Intent(this@MIDAS, MainActivity::class.java)
+            finish()
+            startActivity(intent)
+        }
+    }
+
+    private fun loadInterAd() {
+        val inter : String = getString(R.string.inter)
+
+        var adRequest = AdRequest.Builder().build()
+
+        InterstitialAd.load(this,inter, adRequest, object : InterstitialAdLoadCallback() {
+            override fun onAdFailedToLoad(adError: LoadAdError) {
+                mInterstitialAd = null
+            }
+
+            override fun onAdLoaded(interstitialAd: InterstitialAd) {
+                mInterstitialAd = interstitialAd
+            }
+        })
     }
 }

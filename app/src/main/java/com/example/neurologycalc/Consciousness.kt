@@ -7,17 +7,23 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.ads.AdError
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.FullScreenContentCallback
+import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 
 class Consciousness : AppCompatActivity() {
+    private var mInterstitialAd: InterstitialAd? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_consciousness)
+        loadInterAd()
 
         val consciousnessButton = findViewById<Button>(R.id.backFromConsciousnessButton)
         consciousnessButton.setOnClickListener(){
-            val intent = Intent(this@Consciousness,MainActivity::class.java)
-            finish()
-            startActivity(intent)
+            showInterAd()
         }
 
         val glazgoButton = findViewById<Button>(R.id.glazgoButton)
@@ -59,5 +65,59 @@ class Consciousness : AppCompatActivity() {
         }
 
 
+    }
+
+    private fun showInterAd() {
+        if (mInterstitialAd != null ){
+
+            mInterstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback(){
+                override fun onAdClicked() {
+                    super.onAdClicked()
+                }
+
+                override fun onAdDismissedFullScreenContent() {
+                    super.onAdDismissedFullScreenContent()
+                    val intent = Intent(this@Consciousness,MainActivity::class.java)
+                    finish()
+                    startActivity(intent)
+                }
+
+                override fun onAdFailedToShowFullScreenContent(p0: AdError) {
+                    super.onAdFailedToShowFullScreenContent(p0)
+                }
+
+                override fun onAdImpression() {
+                    super.onAdImpression()
+                }
+
+                override fun onAdShowedFullScreenContent() {
+                    super.onAdShowedFullScreenContent()
+                }
+
+            }
+
+            mInterstitialAd?.show(this)
+
+        }else{
+            val intent = Intent(this@Consciousness,MainActivity::class.java)
+            finish()
+            startActivity(intent)
+        }
+    }
+
+    private fun loadInterAd() {
+        val inter : String = getString(R.string.inter)
+
+        var adRequest = AdRequest.Builder().build()
+
+        InterstitialAd.load(this,inter, adRequest, object : InterstitialAdLoadCallback() {
+            override fun onAdFailedToLoad(adError: LoadAdError) {
+                mInterstitialAd = null
+            }
+
+            override fun onAdLoaded(interstitialAd: InterstitialAd) {
+                mInterstitialAd = interstitialAd
+            }
+        })
     }
 }
